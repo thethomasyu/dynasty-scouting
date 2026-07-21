@@ -1,8 +1,11 @@
-import type { EvalEvent } from '../data/types'
+import type { EvalEvent, Player } from '../data/types'
+import { headshotOf } from '../lib/images'
 
 /**
  * Evaluation history. One real entry exists today; updates are event-driven
- * and get added here only when the picture actually changes.
+ * and get added here only when the picture actually changes. The hollow
+ * future state stays understated on purpose: the profile is alive, not on
+ * a schedule.
  */
 const events: EvalEvent[] = [
   {
@@ -12,10 +15,17 @@ const events: EvalEvent[] = [
   },
 ]
 
-export default function EvalHistory() {
+export default function EvalHistory({ player }: { player?: Player }) {
+  const shot = player ? headshotOf(player.slug) : undefined
   return (
-    <section className="eval-history" aria-label="Evaluation history">
-      <p className="kicker eval-history__kicker">Evaluation history</p>
+    <section className="eval-history" id="eval-history" aria-label="Evaluation history">
+      <div className="eval-history__head">
+        {shot && <img className="eval-history__shot" src={shot} alt="" loading="lazy" />}
+        <div>
+          <p className="kicker eval-history__kicker">Evaluation history</p>
+          <p className="eval-history__intro">This profile is a living file. The line below grows when the evidence does.</p>
+        </div>
+      </div>
       <ol className="eval-history__list" role="list">
         {events.map((e) => (
           <li key={`${e.stage}-${e.date}`} className="eval-history__item">

@@ -6,6 +6,11 @@ import type { HeldProspect, Player } from './types'
  * closely track each profile's own language; nothing here adds a scouting
  * claim the profile does not make.
  *
+ * Per-player visual presentation (trait reads, modules, watch boards,
+ * expansion mapping) lives in src/data/presentation/, one file per slug.
+ * Forks stay here because their content mirrors the profile's translation
+ * section and must be resynced whenever that section changes.
+ *
  * Bio blocks carry the school-listed 2026 roster measurements and roster
  * class designations, verified against each school's official roster in
  * July 2026 (provenance in 02_Player Research/2027/WR/05_Bio Data
@@ -38,9 +43,6 @@ export const players: Player[] = [
     },
     teaser: 'Produced at Harvard, then Duke, now Miami. Precision without an outlier trait, and one variable left.',
     thesis: 'He might have the most professional route-level game in the middle of this class, attached to the kind of athletic profile NFL offenses have a habit of throwing away.',
-    sectionRoles: {
-      'NFL translation, and the last variable': 'translation',
-    },
   },
   {
     slug: 'charlie-becker',
@@ -56,15 +58,6 @@ export const players: Player[] = [
     },
     teaser: 'The loudest per-target numbers in the class, produced inside the smallest job description.',
     thesis: 'Some of the loudest per-target numbers in the class, produced inside the smallest job description in the class. The efficiency is real, and so is the caveat.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-    },
-    question: {
-      text: 'Was the late-season deep dominance real top-end speed, or acceleration and scheme leverage dressed up as speed?',
-      kicker: 'The speed question',
-      beforeHeading: "What isn't on film yet",
-    },
   },
   {
     slug: 'cam-coleman',
@@ -82,16 +75,6 @@ export const players: Player[] = [
     },
     teaser: 'Maybe the most polished big receiver in the class, and two years of Auburn quarterback play kept it quiet.',
     thesis: "He might be the most polished big receiver in this class right now, and there's really only one open argument in his evaluation. The 2026 season is set up to settle it.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-      'What would change the evaluation': 'change',
-    },
-    question: {
-      text: '"Tracking" is really two skills that get lumped into one word.',
-      kicker: 'The tracking question',
-      beforeHeading: 'The deep ball',
-    },
     featuredHook: 'Maybe the most polished big receiver in the class, hidden behind two years of bad Auburn quarterback play. One argument left, and Texas should settle it.',
   },
   {
@@ -109,10 +92,6 @@ export const players: Player[] = [
     },
     teaser: 'One of the fastest players in the class, listed anywhere from 165 to 180 pounds. The scale decides.',
     thesis: 'One of the fastest players in the class, listed anywhere from 165 to 180 pounds. Every serious question about him eventually comes back to the scale.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-    },
   },
   {
     slug: 'kj-duff',
@@ -129,16 +108,6 @@ export const players: Player[] = [
     },
     teaser: 'Gets open the way a power forward gets a rebound: the work happens before the ball goes up.',
     thesis: "The question with him was never skill. It's whether the job he's built for still produces NFL difference-makers, and whether he's the exception.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-      'What would change the evaluation': 'change',
-    },
-    question: {
-      text: 'Where you land on Duff will say nearly as much about how you feel about giant receivers as it says about Duff.',
-      kicker: "What's actually being decided",
-      beforeHeading: 'The history working against him',
-    },
     featuredHook: "A legitimate 6'5-plus with receiver hands and none of the usual stiffness. The best current version of the giant-receiver archetype, and a test of whether that job still pays.",
   },
   {
@@ -171,9 +140,6 @@ export const players: Player[] = [
     },
     teaser: 'A bet that habits outrun a stopwatch, with a lost season stacked on top.',
     thesis: 'A professional-habits receiver at a dense 213 pounds. The evaluation is a bet that habits can outrun a stopwatch, and a lost season stacked a second bet on top.',
-    sectionRoles: {
-      'NFL translation, and the fall test': 'translation',
-    },
   },
   {
     slug: 'nyck-harbor',
@@ -190,15 +156,6 @@ export const players: Player[] = [
     },
     teaser: 'Tight end mass at burner speed, and three seasons where the tools and the results never met.',
     thesis: "Tight end mass moving at burner speed, a combination the sport barely has a name for. Three seasons in, the tools and the results still haven't met.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'What year four has to show': 'question',
-    },
-    question: {
-      text: "Three college seasons in, the tools and the results still haven't met.",
-      kicker: 'The whole evaluation',
-      beforeHeading: 'All the tools, none of the separation',
-    },
     fork: {
       heading: 'NFL translation',
       layout: 'panels',
@@ -249,9 +206,6 @@ export const players: Player[] = [
     },
     teaser: 'Manufactures separation with geometry. Around that one rare skill, mostly fog.',
     thesis: "One proven, unusual thing: he manufactures separation with geometry, other people's bodies included. Around it, mostly fog.",
-    sectionRoles: {
-      "What I'm watching": 'question',
-    },
   },
   {
     slug: 'nick-marsh',
@@ -268,16 +222,6 @@ export const players: Player[] = [
     },
     teaser: "Looks like the finished product, and still doesn't get open enough. The why is the whole evaluation.",
     thesis: "He has real route skill and real strength and still doesn't get open enough. The why matters more than the outcome, because the why decides whether coaching can fix it.",
-    sectionRoles: {
-      'How the projection branches': 'translation',
-      'Biggest question entering 2026': 'question',
-      'What would change the evaluation': 'change',
-    },
-    question: {
-      text: "Marsh has real route skill and real strength and still doesn't get open enough.",
-      kicker: 'The puzzle',
-      beforeHeading: "So why isn't he open more?",
-    },
     fork: {
       heading: 'How the projection branches',
       layout: 'branches',
@@ -321,9 +265,6 @@ export const players: Player[] = [
     },
     teaser: 'No wider gap in the class between what his routes earn and what his hands keep.',
     thesis: 'No receiver in this class has a wider gap between what his routes earn and what his hands keep. His profile is that collision, and not much else.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-    },
   },
   {
     slug: 'devin-mccuin',
@@ -341,10 +282,6 @@ export const players: Player[] = [
     },
     teaser: 'The most reliable hands in the transfer market, walking into a one-season natural experiment.',
     thesis: 'The best receiver program in the sport made an exception for a Group of Five slot with the most reliable hands in the transfer market. One season answers almost everything.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'One season, four answers': 'question',
-    },
   },
   {
     slug: 'omarion-miller',
@@ -361,15 +298,6 @@ export const players: Player[] = [
     },
     teaser: "The body was never the question. The diagnosis of what's missing is.",
     thesis: "What he is physically was never the question. The question is the diagnosis of what's missing, and the two candidate diagnoses lead to two completely different careers.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-    },
-    question: {
-      text: 'Is the nuance gap one missing habit or a whole missing discipline?',
-      kicker: 'The diagnosis',
-      beforeHeading: 'The route problem, two ways to read it',
-    },
   },
   {
     slug: 'tj-moore',
@@ -386,10 +314,6 @@ export const players: Player[] = [
     },
     teaser: 'A receiver waiting on his body. The craft is ahead of the tools, and the fix is pounds.',
     thesis: 'Most of this class is athletes learning to play receiver. Moore is the opposite: a receiver waiting on his body, and the strengths, the flaw, and the fix all point at the same place.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-    },
   },
   {
     slug: 'deuce-robinson',
@@ -406,9 +330,6 @@ export const players: Player[] = [
     },
     teaser: 'Crafty where the frame promises crude, soft where it promises hard. Which position is he?',
     thesis: "6'6 and 222 comes with a job description, and his film reads it backwards: crafty where the frame promises crude, soft where the body promises hard.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-    },
   },
   {
     slug: 'eric-singleton-jr',
@@ -441,16 +362,6 @@ export const players: Player[] = [
     },
     teaser: "I went hunting for cracks and didn't find much. The one question is how fast the route detail arrives.",
     thesis: "I went hunting for cracks and didn't find much. What's left is a timeline question, not a ceiling question.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'What 2026 can settle': 'question',
-      'What would move this evaluation': 'change',
-    },
-    question: {
-      text: 'Does the fine-grain route work start showing up, and what happens the first time a corner disrupts him with technique instead of muscle?',
-      kicker: 'The 2026 question',
-      beforeHeading: 'The contact habit',
-    },
     featuredHook: "The most famous receiver in college football, and I couldn't find much to argue with. What's left is a timeline question, and 2026 starts the clock.",
   },
   {
@@ -469,15 +380,6 @@ export const players: Player[] = [
     },
     teaser: 'One outstanding weapon, one blank page. Nobody has seen him against press.',
     thesis: "One outstanding weapon, one blank page, and one paradox worth working through slowly. The anonymity won't survive his film.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      "What I'm watching in 2026": 'question',
-    },
-    question: {
-      text: 'Does anything here survive outside the slot?',
-      kicker: 'Untested, not failed',
-      beforeHeading: 'The press question',
-    },
   },
   {
     slug: 'bryant-wesco-jr',
@@ -494,17 +396,6 @@ export const players: Player[] = [
     },
     teaser: "Nobody argues about the craft. The argument is over what kind of receiver it's attached to.",
     thesis: 'A 190-pound receiver with the most advanced route and release craft of the top names, and evidence pointing in two opposite directions about what kind of receiver he is.',
-    sectionRoles: {
-      'The back injury': 'medical',
-      'NFL translation: two different players': 'translation',
-      'What 2026 has to answer': 'question',
-      'What would change the evaluation': 'change',
-    },
-    question: {
-      text: 'Is he an NFL deep threat?',
-      kicker: 'One question, two receivers',
-      beforeHeading: 'What kind of receiver is he?',
-    },
     fork: {
       heading: 'NFL translation: two different players',
       layout: 'panels',
@@ -541,15 +432,6 @@ export const players: Player[] = [
     },
     teaser: 'Two seasons, two different players. The whole job is refusing to average them.',
     thesis: 'Two seasons of evidence pointing in opposite directions, two completely different players wearing the same jersey. The whole job is refusing to average them.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'The rebound checklist': 'question',
-    },
-    question: {
-      text: 'Which season is the real player?',
-      kicker: 'The question over everything',
-      beforeHeading: 'The harder read',
-    },
     fork: {
       heading: 'NFL translation',
       layout: 'panels',
@@ -584,15 +466,6 @@ export const players: Player[] = [
     },
     teaser: "The purest tools bet in the class. What's special is special, what's missing is missing.",
     thesis: "The purest tools bet in the class. What's special about him is emphatically special. What's missing is emphatically missing. There's no mystery, just an argument about the price.",
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'What 2026 has to show': 'question',
-    },
-    question: {
-      text: 'Does he attack the ball?',
-      kicker: 'The one non-negotiable',
-      beforeHeading: 'The catching problem',
-    },
     fork: {
       heading: 'NFL translation',
       layout: 'panels',
@@ -627,10 +500,6 @@ export const players: Player[] = [
     },
     teaser: 'The best player in this class who might not be in it.',
     thesis: 'The skills are loud and specific. The questions are structural: the level, the stopwatch, and the calendar itself, because he may not be in this class at all.',
-    sectionRoles: {
-      'NFL translation': 'translation',
-      'The audition year': 'question',
-    },
   },
 ]
 

@@ -4,10 +4,11 @@ import AppHeader from '../components/AppHeader'
 import SiteFooter from '../components/SiteFooter'
 import PlayerHero from '../components/PlayerHero'
 import SectionNav from '../components/SectionNav'
-import ProfileArticle from '../components/ProfileArticle'
 import PrevNext from '../components/PrevNext'
+import VisualProfile, { computeAnchors } from '../components/scouting/VisualProfile'
 import NotFound from './NotFound'
 import { getPlayer } from '../data/players'
+import { presentations } from '../data/presentation'
 import { loadProfile, type ParsedProfile } from '../lib/parseProfile'
 import { useReadingProgress, useRevealRoot } from '../lib/hooks'
 
@@ -35,11 +36,12 @@ export default function PlayerPage() {
     if (player) document.title = `${player.name} · Dynasty Scouting`
   }, [player?.slug])
 
-  const sectionIds = useMemo(() => profile?.sections.map((s) => s.id) ?? [], [profile])
+  const pres = player ? presentations[player.slug] : undefined
+  const anchors = useMemo(() => (pres ? computeAnchors(pres) : []), [pres])
 
   if (!player) return <NotFound />
 
-  const showNav = profile !== null && profile.sections.length >= 3 && profile.words > 650
+  const showNav = profile !== null && anchors.length >= 4
 
   return (
     <div ref={root} key={player.slug}>
@@ -49,14 +51,14 @@ export default function PlayerPage() {
       <AppHeader backTo={{ to: '/2027/wr', label: 'All prospects' }} />
       <main id="main">
         <PlayerHero player={player} />
-        {profile && (
+        {profile && pres && (
           <div className="player-body">
             {showNav && (
               <div className="rail-slot">
-                <SectionNav sections={profile.sections} ids={sectionIds} />
+                <SectionNav sections={anchors} ids={anchors.map((a) => a.id)} />
               </div>
             )}
-            <ProfileArticle player={player} profile={profile} />
+            <VisualProfile player={player} profile={profile} pres={pres} />
           </div>
         )}
         <PrevNext slug={player.slug} />

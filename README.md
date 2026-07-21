@@ -10,7 +10,7 @@ The site has two main experiences.
 
 The class page (the home page) opens with the 2027 WR class, offers five editorial entry points into the class, and then lists all 23 profiles in a searchable, alphabetical directory. Order never implies rank; there are no rankings or grades yet anywhere in the product, on purpose. A "More evidence needed" section covers Junior Sherrill and Braylon Staley, who are being watched but do not have enough evidence for full profiles.
 
-Each player page turns that player's Early Scouting Profile into an editorial reading experience: a hero built around the player cutout that answers the basic scouting questions at a glance (school-listed height and weight, roster class, age at the evaluation date, evaluation stage, and the scouting thesis), the profile prose with section navigation, a pull-quote treatment for the file's central question where one exists, a distinct NFL translation module (including split-path projections for players whose profile genuinely forks), a "What would change my mind" panel, and an evaluation history that today holds the single real entry: Early Evaluation, Summer 2026. Bryant Wesco Jr. and Nick Marsh additionally carry the Trait Lab visual experiment, a compact seven-category read using the project's qualitative tiers.
+Each player page is a visual-first scouting experience built on two levels. Level one, open by default, is the visual layer: the hero (cutout, school-listed measurements, roster class, age at the evaluation date, thesis), a seven-category scouting snapshot using the project's qualitative tiers (Unknown stays visibly unknown; nothing is ever a number), the player's winning mechanisms, custom football-concept diagrams where the evaluation teaches one (route pacing, late hands, release sequencing, and so on; one concept, one owner, no repeats), diagnostics and evidence comparisons where the file genuinely contains them, statistics in context only where the profile carries a verified number, an NFL role map on a simplified alignment field (with split-path projections for players whose file genuinely forks), a 2026 watch board, an evaluation-movement panel, and the living evaluation history. Level two is Thomas's complete long-form analysis: every section of the canonical profile is attached to the module it belongs with and expands inline through "Read full analysis" controls, with an "Expand full report" switch that opens the whole report at once. Nothing essential is hidden, and no canonical paragraph is unreachable; the visual layer is a different way of entering the report, never a replacement for it. Composition varies by player because the evaluations vary: thin files get thin pages on purpose.
 
 ## Technology
 
@@ -31,9 +31,11 @@ React 19, TypeScript, and Vite 8, with React Router in hash mode so routing work
 ├── src/
 │   ├── content/2027/wr/        The 23 profiles as markdown (committed snapshot)
 │   ├── assets/players/         Small webp images the site actually loads
-│   ├── data/                   Player manifest, Trait Lab data, types
+│   ├── data/                   Player manifest and types
+│   ├── data/presentation/      Per-player visual presentation configs (one file per slug)
 │   ├── lib/                    Profile parser, image lookup, scroll hooks
 │   ├── components/             Interface components
+│   ├── components/scouting/    The visual module system: snapshot, diagrams, boards, expansion
 │   ├── pages/                  Class page, player page, not-found page
 │   └── styles/                 Design tokens and stylesheets
 └── .github/workflows/deploy.yml   GitHub Pages deployment
@@ -68,9 +70,9 @@ If this folder sits inside the full Dynasty Scouting project and a profile has b
 npm run sync-content
 ```
 
-It copies any changed profiles into `src/content/`. In the standalone repository the script simply reports that no research folder exists and exits; the committed snapshot keeps working either way. After adding a brand-new player, also add an entry for them in `src/data/players.ts` (name, school, slug, teaser, and any section treatments).
+It copies any changed profiles into `src/content/`. In the standalone repository the script simply reports that no research folder exists and exits; the committed snapshot keeps working either way. After adding a brand-new player, also add an entry for them in `src/data/players.ts` (name, school, slug, teaser, thesis, bio) and a presentation config in `src/data/presentation/<slug>.ts`.
 
-The editorial treatments on player pages (which section is the NFL translation, where the pull quote sits, how a forked projection splits) are declared per player in `src/data/players.ts`. The site never guesses from heading names, because heading names vary across profiles by design.
+The visual presentation of each player page lives in `src/data/presentation/`: the seven trait reads, which modules appear and in what order, the watch items, and which canonical sections each module expands into. Expansion mapping keys on exact heading text (matched through the same normalizer the parser uses), and any section a config does not claim still renders automatically in a "From the full report" zone, so profile edits can never silently orphan analysis. Forked NFL projections stay in `src/data/players.ts` because their content mirrors the profile's translation section and must be resynced whenever that section changes. The trait tiers are the constitution's qualitative scale; there are no numerical grades anywhere in the system, and the configs are structure, never new scouting claims.
 
 ## How player imagery works
 
@@ -92,6 +94,8 @@ Every player entry in `src/data/players.ts` carries a `bio` block: listed height
 Age is never hardcoded. It is computed from the stored date of birth as of `EVALUATION_DATE` (exported from the manifest, currently 2026-07-21 for the Summer 2026 set), truncated to one decimal, so an old evaluation always shows the age the player was when it was written. Birthdates come only from credible sources; where none exists the age renders as an em dash, because unknown beats fake precision. Source provenance for every value lives in the research project at `02_Player Research/2027/WR/05_Bio Data Verification.md`, not in the app.
 
 `scripts/qa-heroes.mjs` is an optional QA harness (like the other scripts, it needs a one-off install: `npm i --no-save playwright-core`). Run `npm run preview` in one terminal and the script in another; it walks all 23 player pages against the production build and checks names, bio values, imagery, routes, search, and horizontal overflow at the standard widths.
+
+`scripts/qa-visual.mjs` does the same walk for the visual layer: every profile's modules render, long-form starts collapsed, section expansion and full-report mode work with correct ARIA state, no horizontal overflow at 1440/1024/768/390/360, and, most importantly, a content-loss audit that reads every canonical paragraph out of `src/content/` and verifies it is reachable on the page once the full report is expanded.
 
 ## Putting this on GitHub
 

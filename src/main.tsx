@@ -16,6 +16,7 @@ import './styles/base.css'
 import './styles/chrome.css'
 import './styles/class.css'
 import './styles/player.css'
+import './styles/scouting.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

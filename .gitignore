@@ -10,6 +10,15 @@ Thumbs.db
 # Local tooling
 .vite/
 qa-shots/
+qa-shots-visual/
+
+# Superseded source files (replaced by src/components/scouting/ and
+# src/data/presentation/ in the July 2026 visual rebuild). The sync
+# bridge cannot delete files, so harmless stubs remain on disk until
+# cleanup-stale-names.cmd removes them.
+src/components/ProfileArticle.tsx
+src/components/TraitLab.tsx
+src/data/traitLab.ts
 
 # Superseded asset folders (non-canonical player names).
 # The canonical copies live under the correctly named folders.

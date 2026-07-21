@@ -1,11 +1,3 @@
-/** Section roles drive the editorial treatment a parsed section receives. */
-export type SectionRole =
-  | 'core'        // standard editorial prose
-  | 'translation' // NFL translation module
-  | 'question'    // closing machinery: the next question + watch items
-  | 'change'      // what would change my mind
-  | 'medical'     // quarantined medical context
-
 /** A conditional NFL-translation fork, rendered as split paths. */
 export interface Fork {
   /** Heading of the section this fork replaces (exact text). */
@@ -17,16 +9,6 @@ export interface Fork {
   outro?: string[]
   /** 'panels' = side-by-side two-path fork; 'branches' = stacked branch list. */
   layout: 'panels' | 'branches'
-}
-
-/** The one question given a large editorial pullout, when a profile has one. */
-export interface QuestionPull {
-  /** Verbatim text pulled from the profile. */
-  text: string
-  /** Small label above the pull. */
-  kicker: string
-  /** Exact heading text the pull is placed before. */
-  beforeHeading: string
 }
 
 /**
@@ -75,9 +57,11 @@ export interface Player {
   teaser: string
   /** Hero standfirst. Grounded in the profile's own thesis language. */
   thesis: string
-  /** Exact H2 text -> treatment. Anything unlisted renders as core prose. */
-  sectionRoles?: Record<string, SectionRole>
-  question?: QuestionPull
+  /**
+   * Conditional NFL projection, synced to the profile's translation section.
+   * The visual layer renders this as the projection module; the fork's
+   * section content lives here rather than in a collapsed expansion.
+   */
   fork?: Fork
   /** Membership in the editorial entry row (not a ranking). */
   featuredHook?: string
