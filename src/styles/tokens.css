@@ -1,0 +1,70 @@
+/* ------------------------------------------------------------------ */
+/* Dynasty Scouting design tokens                                      */
+/* Ink (film room) + paper (the report) + one grease-pencil accent.    */
+/* ------------------------------------------------------------------ */
+
+:root {
+  /* Ink surfaces (dark chrome, heroes) */
+  --ink-950: #090c0f;
+  --ink-900: #0d1115;
+  --ink-850: #11161b;
+  --ink-800: #151b21;
+  --ink-700: #1e262e;
+  --ink-600: #2b3540;
+  --ink-line: #263039;
+
+  /* Paper surfaces (reading) */
+  --paper: #f3efe6;
+  --paper-bright: #faf8f1;
+  --paper-dim: #eae4d6;
+  --paper-deep: #e1dac9;
+  --paper-line: #d9d2c0;
+
+  /* Text */
+  --text-strong: #14181c;
+  --text: #23282e;
+  --text-soft: #4d545c;
+  --text-muted: #757b82;
+  --on-ink: #f0ede4;
+  --on-ink-soft: #b9beb9;
+  --on-ink-muted: #7e8790;
+
+  /* Accent: grease pencil */
+  --accent: #c8432b;
+  --accent-deep: #a33520;
+  --accent-bright: #e05a3e;
+  --accent-wash: rgba(200, 67, 43, 0.08);
+
+  /* Type */
+  --font-display: 'Archivo Black', 'Archivo Variable', sans-serif;
+  --font-sans: 'Archivo Variable', system-ui, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Rhythm */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 2px rgba(20, 24, 28, 0.05), 0 8px 28px -12px rgba(20, 24, 28, 0.18);
+  --shadow-card-hover: 0 2px 4px rgba(20, 24, 28, 0.06), 0 18px 44px -16px rgba(20, 24, 28, 0.28);
+  --shadow-panel: 0 24px 60px -24px rgba(9, 12, 15, 0.5);
+
+  --wrap: 1200px;
+  --article: 680px;
+
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+  --speed-fast: 140ms;
+  --speed: 220ms;
+  --speed-slow: 420ms;
+}

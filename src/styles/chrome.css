@@ -1,0 +1,120 @@
+/* ------------------------------------------------------------------ */
+/* Shared chrome: header, footer, wordmark                             */
+/* ------------------------------------------------------------------ */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: color-mix(in srgb, var(--ink-900) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--ink-line);
+}
+
+.app-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 3.4rem;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  text-decoration: none;
+}
+
+.wordmark__text {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--on-ink);
+  white-space: nowrap;
+}
+
+.wordmark__dot {
+  width: 0.44rem;
+  height: 0.44rem;
+  background: var(--accent);
+  transform: translateY(-1px);
+}
+
+.app-header__meta {
+  color: var(--on-ink-muted);
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .app-header__meta {
+    display: none;
+  }
+}
+
+.app-header__back {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--on-ink-soft);
+  text-decoration: none;
+  padding: 0.45rem 0.2rem;
+  transition: color var(--speed-fast) ease;
+}
+
+.app-header__back:hover {
+  color: var(--on-ink);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--ink-950);
+  border-top: 1px solid var(--ink-line);
+  color: var(--on-ink-soft);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 3rem;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-block: 2.6rem 2.8rem;
+}
+
+.wordmark__text--footer {
+  font-size: 0.9rem;
+}
+
+.site-footer__line {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--on-ink-muted);
+  max-width: 42ch;
+}
+
+.site-footer__meta {
+  color: var(--on-ink-muted);
+  margin: 0;
+}
+
+/* Reading progress hairline */
+.progress-hairline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 80;
+  pointer-events: none;
+  background: transparent;
+}
+
+.progress-hairline__bar {
+  height: 100%;
+  background: var(--accent);
+  transform-origin: 0 50%;
+  transition: transform 80ms linear;
+}

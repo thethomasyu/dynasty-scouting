@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Local tooling
+.vite/
+
+# Superseded asset folders (non-canonical player names).
+# The canonical copies live under the correctly named folders.
+# These can be deleted from disk whenever convenient.
+Assets/Players/2027/WR/Nick March/
+Assets/Players/2027/WR/Nyck Harbor/
+Assets/Players/2027/WR/Jaden Greathouse/
+Assets/Players/2027/WR/Duce Robinson/
+Assets/Players/2027/WR/Ryan Coleman-Williams/
