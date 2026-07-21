@@ -14,8 +14,8 @@ export default function HeldSection() {
             More evidence needed
           </h2>
           <p className="held__note">
-            Two names are on the watch list without full profiles. Writing them now would mean
-            inventing evidence, and unknown beats invented.
+            Two names are on the watch list without full profiles. There isn't enough evidence
+            to write them yet, and I'm not going to invent any.
           </p>
         </div>
         <ul className="held__list" role="list">
@@ -25,7 +25,7 @@ export default function HeldSection() {
                 <img src={headshotOf(h.slug)} alt="" loading="lazy" />
               </div>
               <div className="held-card__body">
-                <p className="held-card__status kicker">File open · no profile yet</p>
+                <p className="held-card__status kicker">On the watch list · no profile yet</p>
                 <h3 className="held-card__name">{h.name}</h3>
                 <p className="held-card__school">{h.school}</p>
                 <p className="held-card__line">{h.line}</p>

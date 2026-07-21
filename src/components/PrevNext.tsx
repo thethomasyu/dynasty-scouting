@@ -10,7 +10,7 @@ export default function PrevNext({ slug }: { slug: string }) {
     <nav className="prevnext" aria-label="More prospects">
       <div className="wrap prevnext__inner">
         <Link to={`/2027/wr/${n.prev.slug}`} className="pn-card" style={{ '--school': n.prev.accent } as React.CSSProperties}>
-          <span className="pn-card__dir kicker">← Previous file</span>
+          <span className="pn-card__dir kicker">← Previous</span>
           <span className="pn-card__row">
             <img src={headshotOf(n.prev.slug)} alt="" loading="lazy" />
             <span>
@@ -20,10 +20,10 @@ export default function PrevNext({ slug }: { slug: string }) {
           </span>
         </Link>
         <Link to="/2027/wr" className="prevnext__all">
-          <span className="kicker">All 23 files</span>
+          <span className="kicker">All 23 profiles</span>
         </Link>
         <Link to={`/2027/wr/${n.next.slug}`} className="pn-card pn-card--next" style={{ '--school': n.next.accent } as React.CSSProperties}>
-          <span className="pn-card__dir kicker">Next file →</span>
+          <span className="pn-card__dir kicker">Next →</span>
           <span className="pn-card__row">
             <span>
               <span className="pn-card__name">{n.next.name}</span>

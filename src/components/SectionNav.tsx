@@ -32,7 +32,7 @@ export default function SectionNav({ sections, ids }: Props) {
 
   return (
     <nav className="section-nav" aria-label="Sections of this profile">
-      <p className="kicker section-nav__label">In this file</p>
+      <p className="kicker section-nav__label">In this profile</p>
       <ul className="section-nav__list" role="list" ref={listRef}>
         {sections.map((s) => (
           <li key={s.id}>

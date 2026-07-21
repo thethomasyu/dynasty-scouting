@@ -23,9 +23,8 @@ export default function TraitLab({ player, readings }: { player: Player; reading
       <div className="trait-lab__head">
         <p className="kicker trait-lab__kicker">Trait Lab · experiment</p>
         <p className="trait-lab__note">
-          A compact read of the seven-category taxonomy, in the project’s qualitative language.
-          No numbers. Unknown stays unknown. Two files carry this module while the format proves
-          itself.
+          A quick read on the seven trait categories. No numbers, and unknowns stay marked
+          unknown. Two profiles carry this module while I test the format.
         </p>
       </div>
       <ul className="trait-lab__grid" role="list">

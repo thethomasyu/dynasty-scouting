@@ -42,7 +42,7 @@ export const traitLab: Record<string, TraitReading[]> = {
     {
       category: 'Ball Skills',
       status: 'Mixed',
-      note: 'Tracking is good. The 2025 drops carry a blip theory that only a healthy season can confirm.',
+      note: 'Tracking is good. The 2025 drops look like a one-bad-year story, and only a healthy season can confirm it.',
     },
     {
       category: 'Functional Athleticism',
@@ -52,12 +52,12 @@ export const traitLab: Record<string, TraitReading[]> = {
     {
       category: 'YAC Ability',
       status: 'Limited evidence',
-      note: 'After-catch play is barely part of the file either way. Nothing to grade honestly yet.',
+      note: 'After-catch play is barely on record either way. Nothing to grade yet.',
     },
     {
       category: 'Football IQ / Spatial Awareness',
       status: 'Strength',
-      note: 'Keeps working after the design breaks down and adjusts routes into dead grass. Gets open on purpose.',
+      note: 'Keeps working after the design breaks down and adjusts routes into empty grass. Gets open on purpose.',
     },
     {
       category: 'Physicality / Blocking',
@@ -89,7 +89,7 @@ export const traitLab: Record<string, TraitReading[]> = {
     {
       category: 'YAC Ability',
       status: 'Major Strength',
-      note: 'Violent, instant, a running back’s inheritance. The most settled trait on the file.',
+      note: 'Violent and instant, straight from his running back past. The most settled part of his game.',
     },
     {
       category: 'Football IQ / Spatial Awareness',

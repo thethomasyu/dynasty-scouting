@@ -26,8 +26,8 @@ export default function ClassHero() {
             </span>
           </h1>
           <p className="class-hero__stand">
-            Twenty-three early scouting profiles. No grades and no rankings yet; those come when
-            the evidence earns them.
+            Twenty-three early scouting profiles, written before the season. No grades and no
+            rankings yet; it's too early for that.
           </p>
           <dl className="class-hero__facts">
             <div>

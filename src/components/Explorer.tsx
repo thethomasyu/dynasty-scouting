@@ -24,10 +24,10 @@ export default function Explorer() {
         <div className="explorer__head reveal">
           <div>
             <h2 id="explorer-title" className="explorer__title">
-              Every file
+              The full class
             </h2>
             <p className="explorer__note">
-              All {orderedPlayers.length} profiles. The order is the alphabet, nothing else.
+              All {orderedPlayers.length} profiles, in alphabetical order. No rankings here.
             </p>
           </div>
           <div className="explorer__search">

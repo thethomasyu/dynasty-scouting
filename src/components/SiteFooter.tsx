@@ -5,7 +5,7 @@ export default function SiteFooter() {
         <div>
           <span className="wordmark__text wordmark__text--footer">Dynasty Scouting</span>
           <p className="site-footer__line">
-            A living evaluation of the 2027 class. Film first, unknowns allowed.
+            Scouting profiles of the 2027 class, updated when the evidence changes.
           </p>
         </div>
         <p className="site-footer__meta kicker">2027 WR class · Early evaluation · Summer 2026</p>

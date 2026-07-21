@@ -8,7 +8,7 @@ const events: EvalEvent[] = [
   {
     stage: 'Early Evaluation',
     date: 'Summer 2026',
-    note: 'Baseline profile from the summer research pass.',
+    note: 'First full evaluation, written in the summer before the season.',
   },
 ]
 
@@ -30,7 +30,7 @@ export default function EvalHistory() {
         ))}
         <li className="eval-history__item eval-history__item--future" aria-hidden="true">
           <span className="eval-history__dot eval-history__dot--hollow" />
-          <p className="eval-history__future">Updates land here when the picture actually changes.</p>
+          <p className="eval-history__future">Updates get added when something real changes, not on a schedule.</p>
         </li>
       </ol>
     </section>

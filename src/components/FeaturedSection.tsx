@@ -13,10 +13,10 @@ export default function FeaturedSection() {
       <div className="wrap">
         <div className="featured__head reveal">
           <h2 id="featured-title" className="featured__title">
-            Ways into the class
+            Start here
           </h2>
           <p className="featured__note">
-            Five files that show the range, from a clean case to an open argument. Not a ranking.
+            Five profiles that show the range of the class. Not a ranking.
           </p>
         </div>
         <div className="featured__grid">
@@ -28,7 +28,7 @@ export default function FeaturedSection() {
               <p className="kicker feature-card__school">{lead.school}</p>
               <h3 className="feature-card__name">{lead.name}</h3>
               <p className="feature-card__hook">{lead.featuredHook}</p>
-              <span className="feature-card__cta">Open the file</span>
+              <span className="feature-card__cta">Read the profile</span>
             </div>
           </Link>
           <div className="featured__rest">
@@ -41,7 +41,7 @@ export default function FeaturedSection() {
                   <p className="kicker feature-card__school">{p.school}</p>
                   <h3 className="feature-card__name">{p.name}</h3>
                   <p className="feature-card__hook">{p.featuredHook}</p>
-                  <span className="feature-card__cta">Open the file</span>
+                  <span className="feature-card__cta">Read the profile</span>
                 </div>
               </Link>
             ))}
