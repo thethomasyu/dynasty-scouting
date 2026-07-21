@@ -9,12 +9,15 @@ Thumbs.db
 
 # Local tooling
 .vite/
+qa-shots/
 
 # Superseded asset folders (non-canonical player names).
 # The canonical copies live under the correctly named folders.
 # These can be deleted from disk whenever convenient.
+# (July 2026: roster verification confirmed "Nyck Harbor" and
+# "Jaden Greathouse" as canonical, so the ignored names flipped.)
 Assets/Players/2027/WR/Nick March/
-Assets/Players/2027/WR/Nyck Harbor/
-Assets/Players/2027/WR/Jaden Greathouse/
+Assets/Players/2027/WR/Nick Harbor/
+Assets/Players/2027/WR/Jayden Greathouse/
 Assets/Players/2027/WR/Duce Robinson/
 Assets/Players/2027/WR/Ryan Coleman-Williams/

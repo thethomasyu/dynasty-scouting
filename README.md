@@ -10,7 +10,7 @@ The site has two main experiences.
 
 The class page (the home page) opens with the 2027 WR class, offers five editorial entry points into the class, and then lists all 23 profiles in a searchable, alphabetical directory. Order never implies rank; there are no rankings or grades yet anywhere in the product, on purpose. A "More evidence needed" section covers Junior Sherrill and Braylon Staley, who are being watched but do not have enough evidence for full profiles.
 
-Each player page turns that player's Early Scouting Profile into an editorial reading experience: a hero built around the player cutout, the profile prose with section navigation, a pull-quote treatment for the file's central question where one exists, a distinct NFL translation module (including split-path projections for players whose profile genuinely forks), a "What would change my mind" panel, and an evaluation history that today holds the single real entry: Early Evaluation, Summer 2026. Bryant Wesco Jr. and Nick Marsh additionally carry the Trait Lab visual experiment, a compact seven-category read using the project's qualitative tiers.
+Each player page turns that player's Early Scouting Profile into an editorial reading experience: a hero built around the player cutout that answers the basic scouting questions at a glance (school-listed height and weight, roster class, age at the evaluation date, evaluation stage, and the scouting thesis), the profile prose with section navigation, a pull-quote treatment for the file's central question where one exists, a distinct NFL translation module (including split-path projections for players whose profile genuinely forks), a "What would change my mind" panel, and an evaluation history that today holds the single real entry: Early Evaluation, Summer 2026. Bryant Wesco Jr. and Nick Marsh additionally carry the Trait Lab visual experiment, a compact seven-category read using the project's qualitative tiers.
 
 ## Technology
 
@@ -83,7 +83,15 @@ npm install --no-save sharp
 npm run derive-images
 ```
 
-Five old asset folders with non-canonical player names (`Nick March`, `Nyck Harbor`, `Jaden Greathouse`, `Duce Robinson`, `Ryan Coleman-Williams`) are superseded by correctly named folders and are listed in `.gitignore`. If they are still on your disk, they can be deleted whenever convenient.
+Five old asset folders with non-canonical player names (`Nick March`, `Nick Harbor`, `Jayden Greathouse`, `Duce Robinson`, `Ryan Coleman-Williams`) are superseded by correctly named folders and are listed in `.gitignore`. If they are still on your disk, they can be deleted whenever convenient. (Roster verification in July 2026 confirmed `Nyck Harbor` and `Jaden Greathouse` as the canonical names, reversing an earlier call in the other direction.)
+
+## How the hero bio data works
+
+Every player entry in `src/data/players.ts` carries a `bio` block: listed height, listed weight, the class designation exactly as the school's current roster renders it (redshirt status preserved), and a date of birth when one could be verified. The hero renders these as a four-item strip. The measurement philosophy is deliberate: during the early cycle these are the school's listed figures, marked with a small asterisk and a one-line note; when official combine or pro day measurements exist, they replace the listed figures (`measurementStatus: 'verified'`) and the asterisk goes away.
+
+Age is never hardcoded. It is computed from the stored date of birth as of `EVALUATION_DATE` (exported from the manifest, currently 2026-07-21 for the Summer 2026 set), truncated to one decimal, so an old evaluation always shows the age the player was when it was written. Birthdates come only from credible sources; where none exists the age renders as an em dash, because unknown beats fake precision. Source provenance for every value lives in the research project at `02_Player Research/2027/WR/05_Bio Data Verification.md`, not in the app.
+
+`scripts/qa-heroes.mjs` is an optional QA harness (like the other scripts, it needs a one-off install: `npm i --no-save playwright-core`). Run `npm run preview` in one terminal and the script in another; it walks all 23 player pages against the production build and checks names, bio values, imagery, routes, search, and horizontal overflow at the standard widths.
 
 ## Putting this on GitHub
 
@@ -112,4 +120,4 @@ The architecture already assumes more positions. Routes follow `/#/2027/wr` and 
 
 ## House rules encoded in this product
 
-No rankings, no numerical grades, no invented statistics, and no fabricated evaluations anywhere in the interface. Unknowns stay visible as unknowns (the Trait Lab renders them distinctly rather than averaging them away). The two held prospects get an honest holding treatment instead of fake profiles. When the research updates, evaluation history entries get added rather than silently rewriting the past.
+No rankings, no numerical grades, no invented statistics, and no fabricated evaluations anywhere in the interface. Unknowns stay visible as unknowns (the Trait Lab renders them distinctly rather than averaging them away, and a player without a verified birthdate shows an unknown age rather than a guessed one). The two held prospects get an honest holding treatment instead of fake profiles. When the research updates, evaluation history entries get added rather than silently rewriting the past.
