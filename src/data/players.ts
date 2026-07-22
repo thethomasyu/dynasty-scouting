@@ -107,7 +107,7 @@ export const players: Player[] = [
       measurementStatus: 'school-listed',
     },
     teaser: 'Gets open the way a power forward gets a rebound: the work happens before the ball goes up.',
-    thesis: "The question with him was never skill. It's whether the job he's built for still produces NFL difference-makers, and whether he's the exception.",
+    thesis: "His skill was never a question for me. What I keep going back and forth on is whether the job he's built for still produces NFL difference-makers, and whether he's the exception.",
     featuredHook: "A legitimate 6'5-plus with receiver hands and none of the usual stiffness. The best current version of the giant-receiver archetype, and a test of whether that job still pays.",
   },
   {
@@ -245,7 +245,7 @@ export const players: Player[] = [
         },
       ],
       outro: [
-        "That's a wide range. It's supposed to be. The reason to name the branches now is so we know exactly which evidence trims them.",
+        "That's a wide range, but a summer profile is supposed to have one. I'm writing the branches down now so I know exactly which evidence crosses each one off.",
       ],
     },
     featuredHook: 'Real route skill, real strength, and still not open enough. The separation gap has two candidate explanations, and only one of them can be coached.',
@@ -296,8 +296,8 @@ export const players: Player[] = [
       rosterClass: 'Senior',
       measurementStatus: 'school-listed',
     },
-    teaser: "The body was never the question. The diagnosis of what's missing is.",
-    thesis: "What he is physically was never the question. The question is the diagnosis of what's missing, and the two candidate diagnoses lead to two completely different careers.",
+    teaser: "The body was never the question. What's missing from his game is the part I'm still working out.",
+    thesis: "The body was never the question. What I'm still working out is what's missing from his game, and depending on the answer you get two completely different careers.",
   },
   {
     slug: 'tj-moore',
@@ -328,8 +328,8 @@ export const players: Player[] = [
       dateOfBirth: '2005-01-19',
       measurementStatus: 'school-listed',
     },
-    teaser: 'Crafty where the frame promises crude, soft where it promises hard. Which position is he?',
-    thesis: "6'6 and 222 comes with a job description, and his film reads it backwards: crafty where the frame promises crude, soft where the body promises hard.",
+    teaser: 'The body promises a bully. The film shows finesse. Which position is he?',
+    thesis: "6'6 and 222 comes with a job description, and his film reads it backwards. He's crafty where the frame promises crude, and for all that size, he plays soft.",
   },
   {
     slug: 'eric-singleton-jr',
@@ -378,8 +378,8 @@ export const players: Player[] = [
       dateOfBirth: '2005-11-18',
       measurementStatus: 'school-listed',
     },
-    teaser: 'One outstanding weapon, one blank page. Nobody has seen him against press.',
-    thesis: "One outstanding weapon, one blank page, and one paradox worth working through slowly. The anonymity won't survive his film.",
+    teaser: 'Maybe the fastest player in the class, with a release game that is all feet and no hands yet.',
+    thesis: "The book on him is thin, so the profile stays thin with it. The one loud trait is speed: he may be the fastest player in the class.",
   },
   {
     slug: 'bryant-wesco-jr',
@@ -394,7 +394,7 @@ export const players: Player[] = [
       dateOfBirth: '2005-09-22',
       measurementStatus: 'school-listed',
     },
-    teaser: "Nobody argues about the craft. The argument is over what kind of receiver it's attached to.",
+    teaser: "The most advanced route craft of the top names, and no agreement on what kind of receiver it's attached to.",
     thesis: 'A 190-pound receiver with the most advanced route and release craft of the top names, and evidence pointing in two opposite directions about what kind of receiver he is.',
     fork: {
       heading: 'NFL translation: two different players',
@@ -411,7 +411,7 @@ export const players: Player[] = [
         },
       ],
       outro: [
-        "Both versions are draftable starters. They're just not the same player, and I'd rather admit that both are still on the table than average them into a receiver who doesn't exist.",
+        "I think he's a draftable starter either way. The role just changes so much with the answer that I'm keeping both projections on the table instead of averaging them into a player who doesn't exist.",
         'Either way, the strength curve matters as much as the speed answer. At 190 pounds with a surgically repaired back, the weight room is not optional.',
       ],
     },
@@ -430,8 +430,8 @@ export const players: Player[] = [
       dateOfBirth: '2007-02-09',
       measurementStatus: 'school-listed',
     },
-    teaser: 'Two seasons, two different players. The whole job is refusing to average them.',
-    thesis: 'Two seasons of evidence pointing in opposite directions, two completely different players wearing the same jersey. The whole job is refusing to average them.',
+    teaser: 'Two seasons pointing in opposite directions. Averaging them tells you almost nothing.',
+    thesis: "Two seasons of evidence pointing in opposite directions. You're really looking at two different players, and averaging the seasons together tells you almost nothing.",
     fork: {
       heading: 'NFL translation',
       layout: 'panels',
@@ -447,7 +447,7 @@ export const players: Player[] = [
         },
       ],
       outro: [
-        "The tiebreaker nobody should skip: he plays this college season at nineteen. Even a partial rebound would make him one of the youngest premium receivers available in any class, with two full SEC seasons already banked. Age doesn't catch drops. It does buy development time most prospects never get.",
+        "The other thing I keep coming back to is his age. He plays this college season at nineteen. Even a partial rebound would make him one of the youngest premium receivers available in any class, with two full SEC seasons already banked. Age isn't going to catch the ball for him, but it buys development time most prospects never get.",
       ],
     },
   },
@@ -464,14 +464,14 @@ export const players: Player[] = [
       dateOfBirth: '2006-02-15',
       measurementStatus: 'school-listed',
     },
-    teaser: "The purest tools bet in the class. What's special is special, what's missing is missing.",
-    thesis: "The purest tools bet in the class. What's special about him is emphatically special. What's missing is emphatically missing. There's no mystery, just an argument about the price.",
+    teaser: "The purest tools bet in the class. What's special is obvious, and so is what's missing.",
+    thesis: "The purest tools bet in the class. What's special about him is obvious, and what's missing is just as obvious. The real argument is about the price.",
     fork: {
       heading: 'NFL translation',
       layout: 'panels',
       intro: [
         "Day one, he's a vertical stressor and a manufactured-touch weapon, and that package alone gets a roster spot and a role: go routes, sweeps, shot plays, the gravity that keeps safeties honest. The full-tree X projection only exists on the other side of the hands rebuild, and the feel question decides whether he ever becomes more than a straight-line problem.",
-        'So the projection forks the way tools bets always fork.',
+        'So the projection has a wide range, like every tools bet does.',
       ],
       paths: [
         {
@@ -480,7 +480,7 @@ export const players: Player[] = [
         },
         {
           label: 'If neither arrives',
-          body: "If neither arrives, he's a decade of coaches getting fired for believing they'd be the ones to fix him.",
+          body: "If neither arrives, he's the type of player who gets coaches fired for a decade, because somebody will always believe they're the one who can fix him.",
         },
       ],
     },

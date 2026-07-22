@@ -73,7 +73,7 @@ const smith: Presentation = {
       diagram: 'late-hands',
       title: 'Why late hands matter',
       lead: 'If a receiver’s arms come up early, the corner gets a free timer telling him exactly when to play the ball. Smith keeps them down, and the corner is guessing until it’s too late.',
-      expands: ['The part nobody argues about'],
+      expands: ['The athletic profile'],
     },
     {
       kind: 'diagram',

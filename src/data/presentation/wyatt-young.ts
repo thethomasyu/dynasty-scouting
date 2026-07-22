@@ -121,7 +121,7 @@ const young: Presentation = {
     {
       kind: 'watch',
       title: 'The audition year',
-      lead: 'The biggest question isn’t a trait. It’s whether the whole package survives the jump with the traits intact.',
+      lead: 'The whole package has to survive the jump in competition with the traits intact. That matters more than any single trait.',
       items: [
         { topic: 'The deep balls first', question: 'Found and finished, or middle-of-the-field for good?', status: 'open' },
         { topic: 'Gear changes', question: 'Any evidence of pacing layered on top of the burst.', status: 'open' },

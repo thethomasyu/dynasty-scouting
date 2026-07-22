@@ -49,7 +49,7 @@ const rcw: Presentation = {
       kind: 'compare',
       kicker: 'The question over everything',
       title: 'Which season is the real player?',
-      lead: 'The evidence contains two completely different players wearing the same jersey, and the whole discipline of evaluating him is refusing to average them together.',
+      lead: 'You’re really looking at two different players here, and averaging the two seasons together tells you almost nothing.',
       layout: 'panels',
       sides: [
         {
@@ -124,9 +124,9 @@ const rcw: Presentation = {
     { kind: 'fork' },
     {
       kind: 'nugget',
-      kicker: 'The tiebreaker nobody should skip',
+      kicker: 'The thing I keep coming back to',
       title: 'He plays this season at nineteen',
-      body: 'Even a partial rebound would make him one of the youngest premium receivers available in any class, with two full SEC seasons already banked. Age doesn’t catch drops. It does buy development time most prospects never get.',
+      body: 'Even a partial rebound would make him one of the youngest premium receivers available in any class, with two full SEC seasons already banked. Age isn’t going to catch the ball for him, but it buys development time most prospects never get.',
     },
     {
       kind: 'watch',

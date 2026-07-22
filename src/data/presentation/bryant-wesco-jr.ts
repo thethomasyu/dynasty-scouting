@@ -102,7 +102,7 @@ const wesco: Presentation = {
     {
       kind: 'compare',
       title: 'What kind of receiver is he?',
-      lead: 'Nobody argues about the skill. The argument is what it’s attached to, and the evidence points in opposite directions.',
+      lead: 'The craft is the best part of his game. The open question is what kind of receiver it’s attached to, and the evidence points in opposite directions.',
       layout: 'stack',
       sides: [
         {
