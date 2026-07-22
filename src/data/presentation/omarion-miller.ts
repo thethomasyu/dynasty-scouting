@@ -10,7 +10,7 @@ const miller: Presentation = {
     {
       category: 'Route Craft',
       tier: 'Concern',
-      note: 'The nuance sits below the athleticism, and the argument worth having is about the shape of the gap. That split gets the middle of this page.',
+      note: 'The nuance sits below the athleticism, and the argument worth having is about the shape of the gap.',
     },
     {
       category: 'Ball Skills',
@@ -74,7 +74,7 @@ const miller: Presentation = {
       kicker: 'A number and its shadow',
       stats: [{ value: '60%+', label: 'Contested-catch rate, 2025' }],
       context:
-        'Winning those balls is a real skill. Needing to win that many of them tells you something, because part of his contested volume exists precisely because he wasn’t separating downfield. The number and its shadow both belong in the evaluation.',
+        'Winning those balls is a real skill. Needing to win that many of them tells you something, because part of his contested volume exists precisely because he wasn’t separating downfield.',
     },
     {
       kind: 'question',

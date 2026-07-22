@@ -63,7 +63,7 @@ const moore: Presentation = {
         {
           name: 'The soft spots',
           icon: 'iq',
-          detail: 'Understands where zone coverage leaves grass and settles into it. Workmanlike, executed, professional.',
+          detail: 'Understands where zone coverage leaves grass and settles into it.',
         },
       ],
       expands: ['Craft first'],

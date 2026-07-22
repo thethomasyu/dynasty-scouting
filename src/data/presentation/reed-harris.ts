@@ -28,7 +28,7 @@ const harris: Presentation = {
     {
       category: 'Functional Athleticism',
       tier: 'Unknown',
-      note: 'The mid-to-high 4.4s figure is an informal estimate, and it gets treated as one. If it’s anywhere close, receivers at 6\'4" and 220 with that gear are scarce.',
+      note: 'The mid-to-high 4.4s figure is an informal estimate. If it’s anywhere close, receivers at 6\'4" and 220 with that gear are scarce.',
     },
     {
       category: 'YAC Ability',

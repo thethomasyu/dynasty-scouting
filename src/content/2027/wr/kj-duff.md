@@ -20,7 +20,7 @@ The best part of his game is honestly the least flashy thing he does: he catches
 
 Receivers his size almost always trap the ball against their chest. Nobody coaches it out of them, because when your catch radius is enormous, cradling works fine in college. Duff attacks the ball at full extension, plucks it away from his frame, and secures it before he starts running. At his size, full-extension catching expands the catchable area into places a defender physically cannot reach, and that's the difference between "big target" and a target you can throw to while he's covered.
 
-I do have to be upfront about one thing here. On film, the hands are the part of his game I trust most. The technique is visible, and some of the grabs on his tape are among the most impressive in this class. The problem is that it's also the least documented part of his game: no reliable drop or contested-catch numbers are available yet. If those numbers eventually come in ugly, I'll rewrite this section. I don't expect that to happen, but I wanted to mention it anyway.
+I do have to be upfront about one thing here. On film, the hands are the part of his game I trust most. The technique is visible, and some of the grabs on his tape are among the most impressive in this class. The problem is that it's also the least documented part of his game: no reliable drop or contested-catch numbers are available yet. If those numbers eventually come in ugly, I'll rewrite this section.
 
 ## So is he a good athlete?
 
@@ -30,7 +30,7 @@ His long speed is ordinary. Nobody watches him and sees a sub-4.4 athlete. The r
 
 The movement is the more interesting part. What usually kills giant receivers is stiffness, not the stopwatch. You see it in high hips that can't sink, long limbs that can't redirect, and routes that telegraph themselves because the body only bends one way. Duff doesn't have that problem. He's fluid, he has real wiggle, he runs respectable in-breakers, and 225 pounds arriving at his speed carries force a defensive back has to respect at the tackle point.
 
-So no, the size context doesn't make him "athletic," and I refuse to grade it that way. What it changes is which risk applies to him. He mostly avoids the usual big-man failure mode, but he's fully exposed to the ordinary-speed one. He's in a better spot than most receivers his size ever get to be in, but the speed risk isn't going anywhere.
+So no, the size context doesn't make him "athletic," and I refuse to grade it that way. What it changes is which risk applies to him. He mostly avoids the usual big-man failure mode, but he's fully exposed to the ordinary-speed one.
 
 ## The history working against him
 
@@ -48,7 +48,7 @@ He drifts on downfield routes. Instead of holding his width and spacing, he lets
 
 That last one sounds like a high bar, but it's the knock that follows him around, and I co-sign it: given the advantage he owns on every rep, he should be more dominant at the catch point than he already is. His run blocking shows the same pattern. There's a rep of him flattening a high-profile safety, so he clearly has it in him. It just doesn't come out every week. None of this is about his talent. It's about the difference between winning most of his reps and winning every rep, and receivers built like him only become stars when they win just about every rep, because a guy who isn't separating much has to make up the difference by being ruthless at the catch point.
 
-One last thing: he's not much of a threat after the catch, but honestly, that was never going to be his job. Almost nobody his size is a run-after-catch player, and his value was never going to live there. It's just something to know going in.
+One last thing: he's not much of a threat after the catch, but that was never going to be his job. Almost nobody his size is a run-after-catch player. It's just something to know going in.
 
 ## NFL translation
 

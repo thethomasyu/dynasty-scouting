@@ -106,7 +106,7 @@ const duff: Presentation = {
         },
       ],
       verdict: {
-        label: 'Where I land',
+        label: 'My read',
         body: 'The best current version of this archetype in the class, which earns him a real projection instead of a category discount. The risk, precisely: catch-point dependence. Catch-point receivers with great quarterbacks look like stars. The same receiver with a scattershot passer disappears for a month at a time, and he already lived that life at Rutgers.',
       },
       expands: ['So is he a good athlete?', 'The history working against him'],

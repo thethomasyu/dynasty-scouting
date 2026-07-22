@@ -62,7 +62,7 @@ const johnson: Presentation = {
       steps: [
         { label: 'Early in games', text: 'The signature shake-fake wins.' },
         { label: 'Then', text: 'Corners catalog it and sit on it.' },
-        { label: 'The bill', text: 'The wasted steps start costing him the exact separation the move used to buy. Reliability is the whole difference between a move and a tell.' },
+        { label: 'The bill', text: 'The wasted steps start costing him the exact separation the move used to buy.' },
       ],
       expands: ['The one-move problem'],
     },

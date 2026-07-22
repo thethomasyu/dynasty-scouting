@@ -101,10 +101,6 @@ const coleman: Presentation = {
           label: 'Why it matters',
           body: 'He’s not a burner who can outrun a late locate and recover. His deep game needs to be on time.',
         },
-        {
-          label: 'What answers it',
-          body: 'Texas. For the first time in his college career, the deep ball will be catchable often enough to give us a real answer.',
-        },
       ],
     },
     {

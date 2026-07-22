@@ -10,7 +10,7 @@ That last part is honestly the whole evaluation. Wingo is the purest tools bet i
 
 So what does that track time actually mean on a football field? Let me try to translate it. His acceleration arrives while corners are still opening their hips, which means the cushion disappears on a schedule they've never practiced against. His long speed is true home-run gear, so one missed jam or one blown leverage becomes seven points. And because 210-plus pounds arrives with the speed, his vertical stem is a physical event: he leans into corners mid-route and bursts off the contact, and defenders have to honor the collision and the sprint at the same time.
 
-One thing to note about the power game is how blatant it is. The stem bullying works in college partly because college officials let it go, and NFL crews will throw flags on some of those reps. The strength is real. He'll need to learn a legal version of it, which is a real development item, but I think it's a fixable one.
+The power game is blatant. The stem bullying works in college partly because college officials let it go, and NFL crews will throw flags on some of those reps. The strength is real. He'll need to learn a legal version of it, a development item I think is fixable.
 
 One more thing on the movement: the athleticism runs more linear than lateral. There's a little stiffness in him, and the wiggle you'd want in a shifty separator isn't really his game. He's a runaway train, not a joystick.
 

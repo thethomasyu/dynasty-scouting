@@ -26,7 +26,7 @@ In the red zone, the positioning and the ball-plucking make him a finishing weap
 
 ## Two years of bad quarterback play
 
-I keep coming back to the quarterback situation, because it does more damage than just shrinking a stat line. It messes with the evaluation itself. Deep tracking reps, contested rates, even the deception question all carry an asterisk when the ball rarely arrives where it's supposed to. Keep that in mind through this whole profile. Sometimes the asterisk works in his favor and sometimes it works against him, and I'll flag it when it comes up.
+I keep coming back to the quarterback situation, because it does more damage than just shrinking a stat line. It messes with the evaluation itself. Deep tracking reps, contested rates, even the deception question all carry an asterisk when the ball rarely arrives where it's supposed to. Keep that in mind through this whole profile. I'll flag it when it comes up.
 
 One thing bad quarterbacking can't hide is how a guy plays. Coleman kept working through a lost season: real blocking impact in the run and screen game, and when he got hurt against Vanderbilt, he came back late in the fourth quarter to help tie the game.
 
@@ -36,11 +36,11 @@ His football IQ is the quarterback-friendly kind that box scores never capture. 
 
 Now for the one question I still can't settle. I've gone back and forth on his deep ball more than anything else in his evaluation.
 
-There are reps where he tracks the deep ball as well as anyone in this class. The adjustments, the finishing, all the acrobatic stuff. It's all on tape. But his first look on true vertical shots comes with mistakes, including a deep ball he flat-out mistracked in that same Alabama game, and it's the one recurring blemish in an otherwise clean technical profile.
+There are reps where he tracks the deep ball as well as anyone in this class. The adjustments, the finishing, all the acrobatic stuff. It's all on tape. But his first look on true vertical shots comes with mistakes, including a deep ball he flat-out mistracked in that same Alabama game, and it's the one recurring blemish.
 
 The best explanation I can come up with is that "tracking" is really two skills that get lumped into one word. Adjusting and finishing on a ball he can see and reach is one skill, and Coleman is excellent at it. Locating a 45-yard shot from the moment his head comes around, and running the right path to it, is a different skill, and that's where the shaky reps live. Now layer two years of deep balls arriving like punts on top of that, and you get a question the current evidence can't close.
 
-So I'm not going to fake a verdict. What I will commit to is that every ingredient around the deep ball is already in place. He accelerates well. He can stack a corner, meaning get even with him, get past him, then hold him on his back hip so the throwing window stays clean. And when he's near the ball, the finishing is elite. If the early locate is clean, there is no missing piece left in his vertical game. And it's why the Texas transfer is so convenient for the evaluation: for the first time in his college career, the deep ball will be catchable often enough to give us a real answer.
+Every ingredient around the deep ball is already in place. He accelerates well. He can stack a corner, meaning get even with him, get past him, then hold him on his back hip so the throwing window stays clean. And when he's near the ball, the finishing is elite. If the early locate is clean, there is no missing piece left in his vertical game. And it's why the Texas transfer is so convenient for the evaluation: for the first time in his college career, the deep ball will be catchable often enough to give us a real answer.
 
 ## Loose ends
 

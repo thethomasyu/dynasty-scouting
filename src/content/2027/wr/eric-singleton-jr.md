@@ -2,7 +2,7 @@
 
 *Florida, by way of Auburn and Georgia Tech. Early 2027 class profile, written in the summer of 2026, before his senior season. Short record, short profile, on purpose. Nobody has declared for anything yet.*
 
-The book on Eric Singleton Jr. is thin, so this profile stays thin with it. What is established is worth knowing, though, because the headline trait might be the loudest in the class: he may be the fastest player in it. State champion in the 100, 200, and 400 meters, a fixture on athletic-freak lists, and the film agrees with the résumé on both ends: elite acceleration and a real top gear, at 5'10" and 182.
+The book on Eric Singleton Jr. is thin, so this profile stays thin with it. The headline trait might be the loudest in the class: he may be the fastest player in it. State champion in the 100, 200, and 400 meters, a fixture on athletic-freak lists, and the film agrees with the résumé on both ends: elite acceleration and a real top gear, at 5'10" and 182.
 
 Two specific things are on record beyond the speed. First, his release game is all feet. The footwork is good enough that he's played outside against press despite his size, and he does it with almost no hand usage at the line. It works until corners start touching you, and NFL corners touch everyone. If the hands never show up, he'll live in the slot. Second, he's a reliable adjuster: good body control, tracks the deep ball well, a drop rate under five percent, with an occasional body-catch habit as the footnote.
 

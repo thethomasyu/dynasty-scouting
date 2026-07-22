@@ -82,7 +82,7 @@ const greathouse: Presentation = {
       ],
       resolution: {
         label: 'The uncomfortable part, out loud',
-        text: 'The question is whether he’s enough of an athlete for the winning traits to survive NFL speed. There was no surplus to lose.',
+        text: 'The question is whether he’s enough of an athlete for the winning traits to survive NFL speed.',
       },
     },
     { kind: 'medical', heading: 'The injury' },

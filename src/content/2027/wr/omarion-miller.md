@@ -4,13 +4,13 @@
 
 Omarion Miller's college career has been a mess that had very little to do with him: three years at Colorado under constant quarterback churn, a broken leg that ended his 2024 season in October, then a 2025 comeback good enough that he nearly declared for the last draft. Now he's a senior-year transfer at Arizona State. Through all of it, the one thing that never wavered was the body. He's a dense 210 pounds at 6'1" or 6'2", heavy for the position, and he moves in a way that makes you double-check the listing.
 
-The body was never the question with him, though. What I'm still trying to work out is what's missing from his game, and depending on the answer you end up with two completely different careers. That question matters more to me than any single trait he has, so it gets the middle of this profile.
+The body was never the question with him, though. What I'm still trying to work out is what's missing from his game, and depending on the answer you end up with two completely different careers.
 
 ## The tools
 
 The explosiveness is the foundation of everything. At his weight, which sits in the 71st percentile for the position, Miller's burst and gliding stride are special rather than merely good, and the two-sport background backs it up: he scored 26 points a game as a high school basketball player. This is the kind of athlete who was going to stand out in whichever sport he picked.
 
-He's also comfortable in traffic in a way big athletes often aren't. His contested-catch rate ran above 60% last season, and you can see the comfort on film: he'll adjust, absorb the contact, and finish with people hanging on him. One thing to note with that number, though: part of his contested volume exists because he wasn't separating downfield. Winning those balls is a real skill, but needing to win that many of them points right back at the long-speed question, which is still unanswered. I don't doubt the burst at all, but the top gear is undocumented, and no measurement exists either way.
+He's also comfortable in traffic in a way big athletes often aren't. His contested-catch rate ran above 60% last season, and you can see the comfort on film: he'll adjust, absorb the contact, and finish with people hanging on him. One thing to note with that number, though: part of his contested volume exists because he wasn't separating downfield. Winning those balls is a real skill, but needing to win that many of them points right back at the long-speed question, which is still unanswered. I don't doubt the burst at all, but the top gear is undocumented.
 
 After the catch he's sturdy and fluid at the same time. He absorbs the first hit and keeps going, and there's a fair argument his after-catch numbers undersell the skill. The catch column has a wart, though: a double-digit drop rate, driven by concentration, looking upfield before the ball is put away. His hard-catch tape is better than his easy-catch tape, which is fixable and also slightly maddening.
 
@@ -24,7 +24,7 @@ The other possibility is narrower and more interesting to me: the nuance already
 
 The annoying part is that the film supports both answers, because they're describing different route families, so I can't just wave one of them off. Is the nuance gap one missing habit or a whole missing discipline? If the stop-route sell is the last missing piece, Miller is one fix away from the class's upper tier. If it turns out to be the visible edge of a general absence, he's a multi-year project on a senior's clock. I lean toward the narrower answer, because the angled-route deception is too specific to be an accident, but I'm holding it loosely until September.
 
-His zone feel is another one I haven't sorted out. There are two credible observations that look contradictory: settling into soft spots on some reps, drifting into coverage on others. Settling correctly and drifting while on the move are different behaviors, and he may own one and lack the other. I don't have a verdict there yet.
+His zone feel is another one I haven't sorted out. There are two credible observations that look contradictory: settling into soft spots on some reps, drifting into coverage on others. Settling correctly and drifting while on the move are different behaviors, and he may own one and lack the other.
 
 ## Context, and the clock
 

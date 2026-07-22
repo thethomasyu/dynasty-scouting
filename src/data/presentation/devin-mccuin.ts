@@ -35,7 +35,7 @@ const mccuin: Presentation = {
     {
       category: 'Football IQ / Spatial Awareness',
       tier: 'Strength',
-      note: 'He sets defenders up, and players who set defenders up at every level of football tend to keep doing it at the next one.',
+      note: 'He sets defenders up, and players who set defenders up tend to keep doing it at the next one.',
     },
     {
       category: 'Physicality / Blocking',

@@ -47,7 +47,7 @@ const young: Presentation = {
     {
       kind: 'snapshot',
       contextNote:
-        '93% of snaps from the slot, with free releases, against Group of Five coverage. Keep that sentence underneath everything above it. And the calendar: he may not be in this class at all.',
+        '93% of snaps from the slot, with free releases, against Group of Five coverage. And the calendar: he may not be in this class at all.',
     },
     {
       kind: 'stat',

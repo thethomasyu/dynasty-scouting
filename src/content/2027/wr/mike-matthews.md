@@ -2,7 +2,7 @@
 
 *Tennessee. Early 2027 class profile, written in the summer of 2026, before his junior season. Nobody has declared for anything yet.*
 
-Mike Matthews, a former five-star at 6'1" and 200 pounds whose breakout is running two years behind schedule, might be the best pure route-menu prospect in the middle of this class. He's also dropping and losing enough catchable balls to make the routes almost beside the point. His profile is that collision and not much else, so this one stays compact.
+Mike Matthews, a former five-star at 6'1" and 200 pounds whose breakout is running two years behind schedule, might be the best pure route-menu prospect in the middle of this class. He's also dropping and losing enough catchable balls to make the routes almost beside the point. His profile is that collision and not much else.
 
 ## The route menu
 
@@ -14,7 +14,7 @@ Full-menu route running at this age is rare, and it's the specific skill NFL tea
 
 The numbers against: a drop rate above fifteen percent and a contested rate below thirty. Both hold up from any angle you check, so there's no sample-size argument to hide behind. What actually worries me is that nobody has pinned down why. Body catching? Concentration? Timing? The record doesn't say. An undiagnosed catching problem is harder to price than a diagnosed one, because you can't tell whether you're buying a technique fix or a chronic condition.
 
-Maybe it's just consistency and comfort, and it cleans up with volume. Or maybe catch reliability this poor disqualifies him from the tier his routes deserve. Both fit the current record. Which way it breaks mostly comes down to how patient you're willing to be.
+Maybe it's just consistency and comfort, and it cleans up with volume. Or maybe catch reliability this poor disqualifies him from the tier his routes deserve. Both fit the current record.
 
 ## The press problem
 

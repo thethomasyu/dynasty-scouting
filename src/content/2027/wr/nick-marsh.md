@@ -12,7 +12,7 @@ I'll start with what's settled, because one part of his game is about as settled
 
 One thing to note, though: he occasionally dances. He'll try to turn a seven-yard gain into a house call and turn it into four instead. It's a decision-making habit, a familiar one for former high school running backs, and it's the cheapest thing on this list to fix.
 
-I'll file the blocking here too. At its best, his blocking is some of the best receiver blocking in this class. It just isn't every rep yet, and the gap between his best blocking rep and his average one is pure effort, which he controls. Strength and toughness are nowhere in this profile as questions. Keep that in mind, because it makes what happens at the catch point even more confusing. I'll get to that later.
+I'll file the blocking here too. At its best, his blocking is some of the best receiver blocking in this class. It just isn't every rep yet, and the gap between his best blocking rep and his average one is pure effort, which he controls. Strength and toughness are nowhere in this profile as questions. Keep that in mind, because it makes what happens at the catch point even more confusing.
 
 ## The skill is real too
 
@@ -20,7 +20,7 @@ This part matters, because the lazy take on Marsh is "power guy, needs polish," 
 
 Another thing that stood out to me is the late gear at the breakpoint. He'll run near full speed through the stem, then find an extra burst exactly at the cut, and that timing turns tight coverage into a catchable window right as the ball arrives. Breakpoint re-acceleration is a trait you associate with high-end NFL separators. It's on his tape more than once, and it's the single strongest piece of evidence that the ceiling is real.
 
-I'll attach my own caution to all of it: route polish always looks better when the corners are ordinary, and his craft deserves a re-check against better coverage in 2026. But on the current film, the skill is real.
+I'll attach my own caution to all of it: route polish always looks better when the corners are ordinary, and his craft deserves a re-check against better coverage in 2026.
 
 ## So why isn't he open more?
 
@@ -42,7 +42,7 @@ And you can see exactly what it is on film. He's a body catcher. He lets the thr
 
 What makes this the most interesting flaw he has is that nothing physical explains it. The length is there, the strength is there, and this is a player who runs into contact for fun the moment the ball is in his hands. He isn't shy. He just doesn't attack the ball. And if nothing physical explains it, then it's a habit, and a habit can be retrained. Everything else about how he plays says the retraining should take.
 
-I'll add a caution here, though. It's easy to call a flaw "coachable" before anyone has actually fixed it. Watch whether it changes, and don't pay for the fix until you see it.
+It's easy to call a flaw "coachable" before anyone has actually fixed it. Watch whether it changes, and don't pay for the fix until you see it.
 
 ## How the projection branches
 
@@ -54,7 +54,7 @@ That's a wide range, but a summer profile is supposed to have one. I'm writing t
 
 The 2025 context can't be ignored: Michigan State's quarterback play was inaccurate enough to get the quarterback benched, and Marsh still produced 660-plus yards and six touchdowns through it. Now he lands in an Indiana receiver room that just sent two starters to the NFL draft and cleared out target volume, next to Charlie Becker, another receiver in this class worth reading alongside him. He gets a better offense, better coaching, and real volume now, so 2026 should finally be a fair test.
 
-One caution about the breakout, though, if it comes: box scores don't measure separation. An 1,100-yard season built on scheme touches and contested volume would leave every question here exactly where it stands.
+Box scores don't measure separation. An 1,100-yard season built on scheme touches and contested volume would leave every question here exactly where it stands.
 
 ## Biggest question entering 2026
 

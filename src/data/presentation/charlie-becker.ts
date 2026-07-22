@@ -61,7 +61,7 @@ const becker: Presentation = {
       kind: 'nugget',
       kicker: 'Scouting nugget · reading a stat line',
       title: 'A test built in his favor',
-      body: 'A contested-catch rate that gaudy on that sample is two things at once: elite production, and a test built in his favor. The NFL doesn’t build the test in your favor. Neither claim cancels the other, and holding both is the whole evaluation.',
+      body: 'A contested-catch rate that gaudy on that sample is two things at once: elite production, and a test built in his favor. The NFL doesn’t build the test in your favor.',
     },
     {
       kind: 'howHeWins',
@@ -117,7 +117,7 @@ const becker: Presentation = {
         },
       ],
       verdict: {
-        label: 'Where I land',
+        label: 'The part I’ll commit to',
         body: 'I’m not picking a winner in July, because the samples disagree and each comes with a plausible excuse. What I will say is which answer matters: if the top gear is real, the vertical dominance travels mostly as-is. If it was acceleration plus scheme leverage, he becomes a timing-and-positioning deep threat, a much more quarterback-dependent living.',
       },
     },

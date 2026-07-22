@@ -109,7 +109,7 @@ const amariThomas: Presentation = {
           body: 'Nobody knows whether he can beat press, because almost nobody has tried pressing him. 71% slot snaps, free releases.',
         },
         {
-          label: 'Why it matters',
+          label: 'The whole test',
           body: 'Press is the exact skill that decides whether anything he does works outside.',
         },
         {

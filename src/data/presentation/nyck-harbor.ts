@@ -79,7 +79,7 @@ const harbor: Presentation = {
     {
       kind: 'read',
       title: 'The catch point, same story',
-      line: 'Tools present, results behind, in miniature: he boxes defenders away and owns red zone space, and the contested results still run below what the frame promises. He should be more dominant than he is, everywhere.',
+      line: 'Tools present, results behind, in miniature: he boxes defenders away and owns red zone space, and the contested results still run below what the frame promises.',
       expands: ['The catch point, same story'],
     },
     { kind: 'fork' },

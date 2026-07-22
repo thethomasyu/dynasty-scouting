@@ -6,7 +6,7 @@ Deuce Robinson is 6'6" and 222 pounds, and that body comes with a job descriptio
 
 ## The craft
 
-The surprise on his film is intelligence. Robinson works to spots like a receiver who's been taught, with real finesse in how he stems his routes and arrives, and he attacks zone coverage with a clarity most jumbo receivers never develop. He knows where to be, when, and why. For a player whose recruiting profile screamed "raw tools," that's the opposite of what you'd expect. His craft is ahead of his body, not the other way around.
+The surprise on his film is intelligence. Robinson works to spots like a receiver who's been taught, with real finesse in how he stems his routes and arrives, and he attacks zone coverage with a clarity most jumbo receivers never develop. He knows where to be, when, and why. For a player whose recruiting profile screamed "raw tools," that's the opposite of what you'd expect.
 
 His catch-point life is heavy: roughly a third of his catches last season were contested, 18 won out of 38 tries on 56 total catches. Decent results, but the volume is the real finding. A receiver who lives at the catch point that much isn't choosing to. The separation isn't coming, and the 6'6" strike zone gives corners a big, legal target to play through on the way to the ball. On screens, where the geometry favors him against small defensive backs, he reliably runs through the first tackle. That's the one place where his size actually shows up as force.
 
@@ -14,7 +14,7 @@ His catch-point life is heavy: roughly a third of his catches last season were c
 
 Robinson gets bumped around on routes far too easily for a man his size. Contact he should barely feel moves him off his line, and corners have figured out that the giant is the one who can be muscled. What beats him in coverage is play strength through the route, not his movement.
 
-The blocking tells the same story: sometimes good, too often without fire. And that fire matters no matter which way he goes, because both of his realistic NFL futures demand physicality. The movement itself is closer to a tight end's, without top-end speed or receiver-grade elusiveness, and the frame could plausibly carry 235.
+The blocking tells the same story: sometimes good, too often without fire. The movement itself is closer to a tight end's, without top-end speed or receiver-grade elusiveness, and the frame could plausibly carry 235.
 
 ## The position question
 

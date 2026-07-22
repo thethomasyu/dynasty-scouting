@@ -24,9 +24,9 @@ I have some sympathy for how the gap happened. He has never needed the fine-grai
 
 But watch what Smith does when the break doesn't win, because it's my favorite detail on his tape. He doesn't stand around waiting for the ball. He attacks back downfield toward the throw, which shrinks the window a driving corner needs to undercut it. That habit saves his quarterback from interceptions, and it looks like a player who knows exactly which part of his game hasn't caught up yet.
 
-So how much should the route stuff cost him? Part of me wants to say barely anything. Stopping and starting at 225 pounds is physics, some of this is just the cost of the frame, and a gap between the routes and the talent is the most normal thing you could find on a player like this. At the same time, I understand the concern that this is exactly what slows his first NFL seasons. If a team hands him a full route tree in September of his rookie year, pro corners will make him live in the part of his game that's still under construction.
+The route stuff barely costs him. Stopping and starting at 225 pounds is physics, some of this is just the cost of the frame, and a gap between the routes and the talent is the most normal thing you could find on a player like this. The concern is that it slows his first NFL seasons. If a team hands him a full route tree in September of his rookie year, pro corners will make him live in the part of his game that's still under construction.
 
-If I had to pick, I lean toward barely anything, but I do take the concern seriously. Everything I just listed is technique and habit. None of it is effort, and none of it is physical. This is a guy who runs full-speed decoy routes when the ball is going somewhere else, and players with that motor and this much athletic margin usually get the details eventually. So my question with him is about the timeline, not the ceiling, and I can live with that.
+Everything I just listed is technique and habit. None of it is effort, and none of it is physical. This is a guy who runs full-speed decoy routes when the ball is going somewhere else, and players with that motor and this much athletic margin usually get the details eventually. So my question with him is about the timeline, not the ceiling.
 
 ## The contact habit
 
@@ -42,7 +42,7 @@ Blocking is willing but unfinished. There are real flashes of perimeter impact, 
 
 ## NFL translation
 
-The vertical and catch-point package travels on day one, and that alone makes him an immediate outside starter. Where he lines up is easy: he's an X. The part I'm less sure about is what his first couple of seasons look like. If a team deploys him first as a deep and contested-catch weapon while the route detail catches up, the transition looks smooth. If they ask him to be a full-tree number one immediately, he'll have stretches where the refinement gap shows up in ways it never did in college. Once again, that range is about the first two years, not about the destination.
+The vertical and catch-point package travels on day one, and that alone makes him an immediate outside starter. Where he lines up is easy: he's an X. The part I'm less sure about is what his first couple of seasons look like. If a team deploys him first as a deep and contested-catch weapon while the route detail catches up, the transition looks smooth. If they ask him to be a full-tree number one immediately, he'll have stretches where the refinement gap shows up in ways it never did in college.
 
 ## What 2026 can settle
 

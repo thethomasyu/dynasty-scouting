@@ -16,9 +16,9 @@ He's bending the coverage before the ball is even in the air. He stretches defen
 
 The 2025 numbers are ugly from any angle: double-digit drops on around 80 targets, and a career count already in the high teens. He's not getting back to the top of this class until that number comes down.
 
-What matters more to me than the count is how he's dropping them, and it's strange. He makes spectacular catches, full-extension grabs, including a catch in traffic through a big hit at the exact moment the horrible-hands storyline was peaking. Then he drops routine, easy chances with nobody near him. That combination, great difficult catches and then inexplicable easy drops, looks to me like a concentration problem, his focus coming and going, not bad hands.
+What matters more to me than the count is how he's dropping them, and it's strange. He makes spectacular catches, full-extension grabs, including a catch in traffic through a big hit at the exact moment the horrible-hands storyline was peaking. Then he drops routine, easy chances with nobody near him. That combination looks to me like a concentration problem, his focus coming and going, not bad hands.
 
-The optimistic read is that concentration has a much better repair history than bad hands do. The catch is that it puts everything on his habits, and habits are where the harder questions about his 2025 start.
+Concentration has a much better repair history than bad hands do. The catch is that it puts everything on his habits, and habits are where the harder questions about his 2025 start.
 
 ## The 182-pound problem
 

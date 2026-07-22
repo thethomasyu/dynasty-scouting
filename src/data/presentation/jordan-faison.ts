@@ -12,7 +12,7 @@ const faison: Presentation = {
     {
       category: 'Route Craft',
       tier: 'Strength',
-      note: 'The routes went from an athlete’s routes to a route runner’s in one year, with detail and intention showing up where raw movement used to be. The arrow is the argument.',
+      note: 'The routes went from an athlete’s routes to a route runner’s in one year, with detail and intention showing up where raw movement used to be.',
     },
     {
       category: 'Ball Skills',
@@ -65,7 +65,7 @@ const faison: Presentation = {
       steps: [
         { label: 'Two years ago', text: 'A national-champion lacrosse player moonlighting as a two-star receiver afterthought.' },
         { label: 'Last season', text: 'The moonlighting stopped looking like moonlighting: routes with detail and intention, hands down to a sub-four-percent drop rate.' },
-        { label: 'Now', text: 'Lacrosse is behind him and football gets all of him for the first time. Development curves that steep are rare, and they’re the entire argument here.' },
+        { label: 'Now', text: 'Lacrosse is behind him and football gets all of him for the first time. Development curves that steep are rare.' },
       ],
       resolution: {
         label: 'The wager, stated',

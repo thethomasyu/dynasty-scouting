@@ -18,9 +18,9 @@ There's even a plausible explanation for where the polish came from. His tape in
 
 The routes match the releases. He attacks leverage immediately off the line, runs double moves and shoulder fakes without slowing down, and repeats his patterns consistently enough that a quarterback can throw on trust. For a tall, slender receiver, that reliability is rare. Lanky frames usually have some wobble to them.
 
-Two caveats on the craft, though. His hard cuts are excellent while his 45-degree routes (posts, corners, angled breaks) are merely good. And one specific move, an inside jab into an outside fade, failed repeatedly against that same elite corner. Neither one changes the overall verdict, but both belong on his development list.
+Two caveats on the craft, though. His hard cuts are excellent while his 45-degree routes (posts, corners, angled breaks) are merely good. And one specific move, an inside jab into an outside fade, failed repeatedly against that same elite corner. Both belong on his development list.
 
-One more layer I like: the between-the-lines stuff. There's a rep of him adjusting a drag route into the soft spot of a zone, the patch of empty grass between defenders where the throw is safe, and more broadly he keeps working for his quarterback after the designed play breaks down. Combine the craft with that kind of spatial feel and you can see why he gets open as often as he does.
+One more layer I like: the between-the-lines stuff. There's a rep of him adjusting a drag route into the soft spot of a zone, the patch of empty grass between defenders where the throw is safe, and more broadly he keeps working for his quarterback after the designed play breaks down.
 
 ## The 190-pound problem
 
@@ -36,7 +36,7 @@ A 13.9% drop rate in 2025 is bad. I'm not going to spin the number.
 
 There's some context, though. It happened inside a seven-game season that ended in back surgery, the drops look like focus drops rather than hands-quality drops, and his freshman-year hands were reportedly clean. That distinction matters, so let me define it. A focus drop is concentration failing on a routine ball. A hands-quality drop is technique or catch radius failing on a hard one. The first kind comes and goes with circumstances, and an injury-wrecked season is a circumstance. The second kind follows you for a career.
 
-So there's a real one-bad-year argument here, and it stays an argument until a healthy season resets the number. I'm not excusing the drops. I just don't think one injury-wrecked season is enough to close the book on his hands.
+So there's a real one-bad-year argument here, and it stays an argument until a healthy season resets the number. I just don't think one injury-wrecked season is enough to close the book on his hands.
 
 ## What kind of receiver is he?
 
@@ -48,7 +48,7 @@ Then you put on the full seven healthy games of 2025 and he looks like a legitim
 
 And there's a third possibility that splits the difference: no sudden top gear, but real build-up speed. A long strider who runs away from coverage when the route gives him a runway.
 
-Part of the split is just sampling, and I want to be fair about it. The film that scares me is one game against maybe the best corner he'll see before Sundays. The film that excites me is a full season against everybody else. Elite corners erase almost everyone's deep game, so I give him some benefit of the doubt for that matchup. I can't throw that game out completely, though, because "he only fails to separate against NFL-caliber corners" is a strange thing to feel good about when the whole exercise is projecting him to the NFL. That's the only kind of corner he'll see once this actually matters.
+Part of the split is just sampling. The film that scares me is one game against maybe the best corner he'll see before Sundays. The film that excites me is a full season against everybody else. Elite corners erase almost everyone's deep game, so I give him some benefit of the doubt for that matchup. I can't throw that game out completely, though, because "he only fails to separate against NFL-caliber corners" is a strange thing to feel good about when the whole exercise is projecting him to the NFL. That's the only kind of corner he'll see once this actually matters.
 
 The 17-yards-a-catch number deserves some skepticism too. Yards per catch is polluted evidence. Scheme leverage and busted coverages inflate it, and the number can't tell you whether he stacked his man or just ran through a vacated zone. It supports the deep-threat story, but it doesn't prove it.
 

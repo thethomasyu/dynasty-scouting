@@ -4,7 +4,7 @@
 
 The path is the story here. Cooper Barkate put up over 1,000 receiving yards at Harvard, transferred up and put up over 1,100 in his first power-conference season at Duke, and now moves up again to Miami, with his quarterback making the trip alongside him. Guys who produce at every level they visit are giving you a kind of evidence the stat sheet alone can't, and Barkate has done it at two levels, with only the toughest one left to test.
 
-My angle on him is this: he might have the most professional route-level game in the middle of this class, and it's attached to the kind of athletic profile NFL offenses have a documented habit of throwing away. Precision without an outlier trait is a real archetype, and it's one that makes me nervous.
+My angle on him is this: he might have the most professional route-level game in the middle of this class, and it's attached to the kind of athletic profile NFL offenses have a documented habit of throwing away.
 
 ## The precision
 
@@ -16,7 +16,7 @@ The toughness reads the same way: zero fear of the middle of the field, and cons
 
 I won't dress it up: there's no outlier trait here. The speed is probably better than the stereotype assumes, maybe even sneaky, but a burner projection isn't on the table. The play strength grades ordinary. And that combination triggers a worry bigger than any single game: skill-first receivers without a physical edge risk getting schemed out of NFL offenses entirely unless a staff deliberately builds them in. For this kind of receiver, the gap between sticking as a pro and washing out in camp is smaller than his college production suggests.
 
-Age works against him too. He's a redshirt senior who ran the Ivy League leg of his career first, old for the class, possibly very old, depending on a birthday nobody seems to have verified. None of that changes how good the film is, but it does shrink the window a team is buying.
+Age works against him too. He's a redshirt senior who ran the Ivy League leg of his career first, old for the class, possibly very old, depending on a birthday nobody seems to have verified. It shrinks the window a team is buying.
 
 One note on comps, because this kind of player invites them: the tempting names, the famous undersized savvy types, mostly break down at the stopwatch. Those players tested fast. Nothing on record says Barkate does, and a comp that depends on a speed the player hasn't shown isn't a comp at all.
 

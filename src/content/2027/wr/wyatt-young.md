@@ -4,7 +4,7 @@
 
 Wyatt Young's sophomore season was the kind that breaks stat pages at a Group of Five program: over 1,200 receiving yards in eight starts, ten touchdowns, ten catches of 40-plus yards, and the second-most receiving yards in a single season in North Texas history. Then his head coach took the Oklahoma State job, and Young followed him through the portal, scheme and all.
 
-I'll admit this is one of my favorite evaluations in the class, and also one of the most heavily qualified. The skills that show up are loud and specific, but my questions about him are all structural: the level of competition, the stopwatch, and the calendar itself, because there's a real chance he stays in school and this whole evaluation belongs to the next class. I'll get to the skills first and the qualifiers after.
+I'll admit this is one of my favorite evaluations in the class, and also one of the most heavily qualified. The skills that show up are loud and specific, but my questions about him are all structural: the level of competition, the stopwatch, and the calendar itself, because there's a real chance he stays in school and this whole evaluation belongs to the next class.
 
 ## What's real regardless of level
 
@@ -12,7 +12,7 @@ The burst and the release package travel together, and they're the core of him. 
 
 After the catch he's a problem. He forced 32 missed tackles last season, a number that stands with the best in this class regardless of competition level, and it's built on a sturdy lower body and real balance rather than pure elusiveness. Pair that with a zone radar, an exceptional feel for where the soft spots live, and you get his explosive-play volume. The ten 40-yard catches weren't all footraces. Plenty of them started as a free release, a found window, and a missed tackle.
 
-The frame is 6'0" and around 200, solid enough to imagine inside-outside work. That projection is guesswork right now, though, because 93% of his snaps came from the slot, with free releases, against Group of Five coverage. It's worth keeping that in mind next to everything above it.
+The frame is 6'0" and around 200, solid enough to imagine inside-outside work. That projection is guesswork right now, though, because 93% of his snaps came from the slot, with free releases, against Group of Five coverage.
 
 ## The vertical question
 

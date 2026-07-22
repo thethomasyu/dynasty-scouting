@@ -4,7 +4,7 @@
 
 A year ago, Charlie Becker was a special teams player with a local rumor attached: around Bloomington, the word was that Indiana's third receiver might secretly be its best one. Then the title run happened, the two veterans ahead of him left for the NFL draft, and the rumor went national. Now he shows up on early boards higher than almost anybody expected, and the numbers people quote about him sound made up.
 
-Before anything else, I want to be upfront about the evidence: Becker owns some of the loudest per-target numbers in the class, and he produced them inside the smallest job description in the class. The efficiency is real. It's also very possible that we spent a title run watching a specialist do the only two things his offense ever asked him to do. Keep both of those in mind through the rest of this profile.
+Before anything else, I want to be upfront about the evidence: Becker owns some of the loudest per-target numbers in the class, and he produced them inside the smallest job description in the class. The efficiency is real. It's also very possible that we spent a title run watching a specialist do the only two things his offense ever asked him to do.
 
 ## The numbers first
 
@@ -16,7 +16,7 @@ Now for the caveat, because it's built into how Indiana used him. His route menu
 
 What makes the catch-point dominance believable instead of fluky is that you can see how he does it. Becker is 6'3" or 6'4" depending on who's listing him, around 207, with a state-champion hurdler's résumé. The hurdles matter: his leaping is sudden and repeatable, and it shows up directly in how he plays the ball. He climbs, he times his jump off the throw rather than off the defender, and he finishes with hands draped all over him.
 
-Playing above the rim is more than just being tall. Tall receivers lose contested balls constantly, because they arrive late, jump early, or let the corner into their chest. Becker doesn't have that problem: he gets there first, owns the airspace, and plucks the ball. Add long arms and a catch radius that turns fair throws into completions, and you get a red zone weapon that needs no projection at all. That part of his game is NFL-ready today.
+Playing above the rim is more than just being tall. Tall receivers lose contested balls constantly, because they arrive late, jump early, or let the corner into their chest. Becker doesn't have that problem: he gets there first, owns the airspace, and plucks the ball. Add long arms and a catch radius that turns fair throws into completions, and you get a red zone weapon that needs no projection at all.
 
 The hands underneath the highlights look clean too. The drop column from last season is either empty or close to it, and the tracking on downfield and back-shoulder throws holds up. Small sample, again. But nothing in the catching profile worries me.
 
@@ -40,7 +40,7 @@ The full route tree is a blank, and I want to be clear about what that means: no
 
 Short-area movement is the murkier version of the same question. Can a receiver his size snap off hitches and separate underneath? You could watch him and come away thinking the twitch is ordinary for the height, but there are also reps where the change of direction is there if you dig for them. It stays unsettled because the offense barely ever asked him to break off a route in front of a defender.
 
-After the catch, there's almost nothing: about one meaningful run-after-catch play all season. Given the track explosiveness, I'm not willing to say he can't do it, just that he hasn't shown it, but as of today it's a hole. And the press picture splits by opponent quality: he powered through it against most of the schedule, and the best press corner he faced won their matchups. Something to keep an eye on this season.
+After the catch, there's almost nothing: about one meaningful run-after-catch play all season. Given the track explosiveness, I'm not willing to say he can't do it, just that he hasn't shown it, but as of today it's a hole. And the press picture splits by opponent quality: he powered through it against most of the schedule, and the best press corner he faced won their matchups.
 
 ## NFL translation
 

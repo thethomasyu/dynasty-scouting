@@ -99,12 +99,8 @@ const smith: Presentation = {
           body: 'Pacing and stop-route detail. Nothing ever forced the fine-grain stuff to develop, so the details show it.',
         },
         {
-          label: 'Why it matters',
+          label: 'The cost',
           body: 'If a team hands him a full route tree in September of his rookie year, pro corners will make him live in the part of his game that’s still under construction.',
-        },
-        {
-          label: 'Where I land',
-          body: 'Closer to the reading that says the gap barely costs him. Everything in the concern column is technique and habit, none of it is effort or physical, and I’d rather argue about a timeline than a ceiling.',
         },
       ],
     },

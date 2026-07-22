@@ -2,7 +2,7 @@
 
 *Arizona State, by way of Boston College. Early 2027 class profile, written in the summer of 2026, before his senior season. One good look, plenty still dark. Nobody has declared for anything yet.*
 
-Reed Harris is the kind of prospect you write a go-check-on-this-guy note about: a spring-verified 6'4" and 220 pounds with speed informally pegged in the mid-to-high 4.4s. Treat that speed figure as the estimate it is. But if it's anywhere close, receivers at that size with that gear are scarce, and this one spent his college career hidden in plain sight, catching 39 balls for 673 yards in one of the country's worst passing situations.
+Reed Harris is the kind of prospect you write a go-check-on-this-guy note about: a spring-verified 6'4" and 220 pounds with speed informally pegged in the mid-to-high 4.4s. But if it's anywhere close, receivers at that size with that gear are scarce, and this one spent his college career hidden in plain sight, catching 39 balls for 673 yards in one of the country's worst passing situations.
 
 What the tape shows is a catch-radius game and a power game. Harris uses his full radius the way big receivers are supposed to and often don't: real vertical leaping on jump balls, long arms, big hands, and repeated unusual adjustments to badly placed throws, a skill his quarterback situation forced him to practice constantly. The routes are the concern. He wins through mass and momentum rather than craft, muscling through coverage where refined receivers slip through it, and the smoothness and consistency aren't there yet. So how do you refine a player who has always won by being bigger and faster than the problem?
 

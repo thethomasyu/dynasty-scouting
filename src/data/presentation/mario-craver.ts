@@ -68,7 +68,7 @@ const craver: Presentation = {
           name: 'After the catch, precisely',
           icon: 'yac',
           detail:
-            '22 forced missed tackles and a signature spin. Keep the claim precise: he stays upright through brushes. He doesn’t run through wrapped-up tacklers, and nobody should expect him to.',
+            '22 forced missed tackles and a signature spin. He stays upright through brushes. He doesn’t run through wrapped-up tacklers, and nobody should expect him to.',
         },
         {
           name: 'The compete',
@@ -90,7 +90,7 @@ const craver: Presentation = {
       ],
       resolution: {
         label: 'The uncomfortable question',
-        text: 'Can an offense built on schedule and spacing rely on a receiver whom slot defenders can legally bump off schedule? Role design has to answer before a team drafts the role.',
+        text: 'Can an offense built on schedule and spacing rely on a receiver whom slot defenders can legally bump off schedule?',
       },
       expands: ['The timing problem'],
     },

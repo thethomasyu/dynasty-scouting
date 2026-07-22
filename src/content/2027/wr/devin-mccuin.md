@@ -18,7 +18,7 @@ The caveat on all of that: it happened against American Conference coverage. We 
 
 Press: he was rarely pressed in his college role, and when it happened, his habit was to run around the contact rather than through it, which stretches routes out and breaks their timing. Running around it works fine against off coverage, but it won't hold up against NFL-caliber corners. The Big Ten will press him in September, repeatedly, and this is the exam that matters most.
 
-Arm length: an eyeball estimate puts his arms near the threshold a lot of teams use as an outside cutoff. That's a guess, and I'm treating it as exactly that until somebody measures him. But the answer matters a lot for his projection. If his arms are long enough to play outside, that lifts his value. If he's slot-only, it caps him. Film can't settle this one; he'd have to get measured first.
+Arm length: an eyeball estimate puts his arms near the threshold a lot of teams use as an outside cutoff. That's a guess until somebody measures him. If his arms are long enough to play outside, that lifts his value. If he's slot-only, it caps him. Film can't settle this one.
 
 Top speed: the twitch is proven, but the deep gear hasn't yet shown up as a downfield-separation weapon. Is he fast enough to threaten over the top, or just quick and reliable without that extra gear? I don't know yet.
 
@@ -32,4 +32,4 @@ Best case, he's a do-everything slot with more juice than that label usually imp
 
 The 2026 question is really several questions rolled into one: does the whole game hold up? Press, deep speed, the blocking question, and the jump in competition all get tested by the same schedule, and there's a tape measure waiting at the end for the arms.
 
-Watch the press reps above everything. If he starts working through contact instead of around it, against that conference, the projection unlocks and the spring buzz becomes a draft-season story. If the avoidance habit survives intact, the slot ceiling hardens no matter how many balls he catches. The hands are the constant either way. The season decides what kind of receiver they belong to.
+Watch the press reps above everything. If he starts working through contact instead of around it, against that conference, the projection unlocks and the spring buzz becomes a draft-season story. If the avoidance habit survives intact, the slot ceiling hardens no matter how many balls he catches. The season decides what kind of receiver those hands belong to.

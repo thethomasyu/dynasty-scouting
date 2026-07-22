@@ -2,7 +2,7 @@
 
 *Houston, by way of UAB. Early 2027 class profile, written in the summer of 2026, before his senior season. Nobody has declared for anything yet.*
 
-Amari Thomas put up 966 yards and 12 touchdowns last season, made first-team all-conference, and still barely comes up in draft conversations, because UAB-to-Houston is nobody's idea of a hype pipeline. I don't think that lasts once people start watching his film. It took me a while to sort out what that film is actually showing, though, so let's work through it piece by piece.
+Amari Thomas put up 966 yards and 12 touchdowns last season, made first-team all-conference, and still barely comes up in draft conversations, because UAB-to-Houston is nobody's idea of a hype pipeline. I don't think that lasts once people start watching his film. It took me a while to sort out what that film is actually showing, though.
 
 ## The first ten yards
 
@@ -24,7 +24,7 @@ So how did both of those things happen at once? It comes down to what kind of ca
 
 ## The press question
 
-The thing that keeps his projection conservative for now is that nobody knows whether he can beat press, because almost nobody has tried pressing him. He played 71% of his snaps from the slot with free releases, so the press test simply never happened. To be fair to him, untested is not the same thing as failed. The problem is that beating press is the exact skill that decides whether anything he does works outside.
+The thing that keeps his projection conservative for now is that nobody knows whether he can beat press, because almost nobody has tried pressing him. He played 71% of his snaps from the slot with free releases, so the press test simply never happened. Untested is not the same thing as failed. The problem is that beating press is the exact skill that decides whether anything he does works outside.
 
 One more thing I wanted to mention, and it's minor but consistent: the blocking effort visibly disengages, most noticeably on screens to his side of the field. Effort is usually the cheapest thing in football to fix, but it's also the first thing coaches notice.
 

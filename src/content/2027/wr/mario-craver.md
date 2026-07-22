@@ -4,7 +4,7 @@
 
 Start with the number that refuses to hold still. Mario Craver is listed anywhere from 165 to 180 pounds depending on where you look, and that fifteen-pound spread is the biggest listing dispute in the class. At 180, he's a small receiver. At 165, he's playing below the weight range where the NFL has any real history to price him with. Every serious question about him eventually comes back to the scale.
 
-What isn't in dispute: he's one of the fastest players in the class, with a 10.74-second 100 meters behind the film, and last season he arrived at Texas A&M from Mississippi State and immediately produced a near-1,000-yard, third-team All-SEC year. I've never doubted the speed is real. What I keep coming back to is what a timing-based NFL offense can actually build on a frame like this.
+What isn't in dispute: he's one of the fastest players in the class, with a 10.74-second 100 meters behind the film, and last season he arrived at Texas A&M from Mississippi State and immediately produced a near-1,000-yard, third-team All-SEC year. What I keep coming back to is what a timing-based NFL offense can actually build on a frame like this.
 
 ## The speed
 
@@ -14,7 +14,7 @@ There's also the trajectory to consider: the moment he escaped a bad offense for
 
 ## After the catch
 
-The after-catch game is more than the stopwatch. He forced 22 missed tackles last season with roughly 600 yards after the catch, he owns a signature spin move, and a third of his catches went for 15-plus. The balance is real for his size, in a specific sense: glancing contact doesn't knock him off his feet, and he shows zero fear of the middle. But I want to be precise about it. He stays upright through brushes, but he doesn't run through wrapped-up tacklers, and nobody should expect him to.
+The after-catch game is more than the stopwatch. He forced 22 missed tackles last season with roughly 600 yards after the catch, he owns a signature spin move, and a third of his catches went for 15-plus. The balance is real for his size, in a specific sense: glancing contact doesn't knock him off his feet, and he shows zero fear of the middle. But he doesn't run through wrapped-up tacklers, and nobody should expect him to.
 
 Another thing I liked is his temperament. He does the unglamorous work by choice: willing blocking at his size, visible effort, a competitiveness that jumps off his film. Small receivers who compete like this buy themselves real NFL patience.
 
@@ -24,7 +24,7 @@ Craver's most natural NFL home is the quick game, the screens, drags, motion tou
 
 That vulnerability is mass, not technique, which is why I expect it to follow him up a level. So a team has to ask: can an offense built on schedule and spacing rely on a receiver whom slot defenders can legally bump off schedule? His route running ties into the same worry. Right now I think the speed is still doing most of the work, with tempo manipulation showing up in flashes. If real pacing arrives, the speed plays at all three levels instead of mostly deep, and the reliance on free releases shrinks.
 
-Durability belongs here too, and I'll keep it simple: he has no injury history on record, so this isn't really a medical concern. He absorbs violent collisions at a weight the league has almost no data on. Every front office will price that exposure differently, and nothing resolves it except time.
+Durability belongs here too: he has no injury history on record, so this isn't really a medical concern. He absorbs violent collisions at a weight the league has almost no data on. Every front office will price that exposure differently, and nothing resolves it except time.
 
 ## NFL translation
 
