@@ -2,24 +2,22 @@
 
 *Notre Dame. Early 2027 class profile, written in the summer of 2026. Nobody has declared for anything.*
 
-From a clean pocket, Carr's passing already looks polished: a low-effort delivery, natural touch, and timing well ahead of a first-year starter's. He climbs away from the rush in rhythm and will drop an intermediate ball from the far hash, which is not a young passer's throw. The complication is that the clean-pocket reps are most of the tape, and one season is a thin place to be certain from.
+From a clean pocket, Carr already looks like a made passer. Low-effort delivery, natural touch, timing running well ahead of a guy in his first year of starts. He climbs away from the rush in rhythm and will drop an intermediate ball in from the far hash, which is not a throw young quarterbacks casually own. Here's the complication, and it's the whole profile. Those clean-pocket reps are most of the tape. Twelve starts is a thin ledge to be certain from, and the certainty people want to feel about him is getting built almost entirely out of the easy half of playing the position.
 
 ## Where the evaluations agree
 
-The parts that translate are the ones that show up cleanest. The ball is on time and placed, so structured concepts turn into easy completions, and he feels the rush in rhythm well enough to avoid the sack rather than eat it.
+The parts that travel are the parts that show up cleanest. The ball is on time and placed, so structured concepts turn into easy completions, and he feels the rush in rhythm well enough to slide a sack rather than eat it. That last bit reads smaller than it is. Avoiding the sack by feel, without abandoning the pocket, is a veteran habit on a sophomore.
 
-There is more than arm talent under it. The tape has full-field progression work and accurate third-read throws on it, and for a passer with a single year of starts that is early. When the picture stays clean, the operation looks like a pro's.
+And there's more than arm talent under it. The tape has full-field progression work on it, and accurate throws to the third read, and for a passer with a single season of starts that is genuinely early. When the picture stays clean, the operation looks like a pro's. Nothing in that paragraph is in dispute. It's the next one that is.
 
 ## The open questions
 
-Pressure undoes the clean look. The calm can flip into panic, a reckless extension, or a throw that sails, and the touch that defines his best work can disappear when he overdrives a short in-breaker.
-
-The larger caveat is how little hard evidence there is. His comfort looks uneven by field direction in the games under the microscope, his out-of-structure creativity is close to unknown, and how much Notre Dame put on his plate before and after the snap is open, which changes how much of the processing is his to claim.
+Pressure undoes the clean look. The calm can flip into panic, a reckless bail, or a throw that sails on him, and the touch that defines his best work is the first casualty, usually on a short in-breaker he overdrives, putting a fastball on a throw that wanted a feather. Watch for that one. The bigger caveat isn't really a flaw, it's an absence: there just isn't much hard evidence yet. His comfort looks uneven depending on which way the field is tilted, his out-of-structure creativity is close to a blank page, and how much Notre Dame loaded onto his plate before and after the snap is an open question. That last one matters, because it changes how much of the clean processing is actually his to claim rather than the coaching staff's.
 
 ## Where the evaluations split
 
-The uncertainty here is the sample, not the player. The structured passing is real and it is on the tape. What is not on the tape is enough of the hard stuff, the pressured and out-of-structure reps, to know how much of the clean-pocket version survives contact with the rest of the position. Until that film exists, most of the case for him is still projection.
+The uncertainty here is about the sample, not the player, and that distinction is the whole thing. The structured passing is real and it's on the film; nobody is imagining it. What isn't on the film is enough of the hard stuff, the pressured reps and the out-of-structure reps, to know how much of the clean-pocket version survives contact with the rest of the job. And be careful with his box score, because it looks terrific and it happens to be the wrong instrument for this question. Efficient numbers off mostly-clean dropbacks confirm he's good at the thing everyone already grants he's good at. They can't speak to the thing nobody knows. Until that harder film exists, a lot of the case for him is projection carrying a scouting report's confidence.
 
 ## What I'm watching in 2026
 
-Whether the touch and the accuracy survive pressure, because the gap between his floor and his ceiling lives almost entirely in those reps. Whether the left-right comfort evens out with more starts. And whether he looks settled turning his back on play-action and re-finding the coverage, which is the cleanest tell for how much of the processing belongs to him rather than the scheme.
+Whether the touch and the accuracy survive pressure, because the entire distance between his floor and his ceiling lives in those reps and almost nowhere else. Whether the left-right comfort evens out with more starts. And whether he looks settled turning his back on play-action and then re-finding the coverage on the far side of the fake, which is the single cleanest tell for how much of the processing is really his and how much the scheme was doing for him.
