@@ -30,15 +30,11 @@ const drakeLindsey: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'flow',
-      kicker: 'The structural bet',
-      title: 'Pressure, no answer, rushed throw',
-      lead: 'The whole projection rides on whether he can make pressure survivable without a way to leave the pocket.',
-      steps: [
-        { label: 'Pressure arrives', text: 'He cannot escape it, so the answer has to come from processing.' },
-        { label: 'The process speeds up', text: 'In exactly the wrong way, into rushed throws and poor decisions.' },
-        { label: 'The result', text: 'The same quarterback who layers a gorgeous seam sprays the next one as the lower body loosens.' },
-      ],
+      kind: 'diagram',
+      diagram: 'no-escape',
+      kicker: 'The pocket, drawn up',
+      title: 'Pressure with no way out',
+      lead: 'He cannot solve pressure by leaving the pocket, so when the rush gets home the answer has to come from processing, and under heat the process speeds up in the wrong direction into rushed throws and poor decisions. The same quarterback who layers a gorgeous seam sprays the next one. That is the whole structural bet on him.',
       expands: ['The open questions'],
     },
     {

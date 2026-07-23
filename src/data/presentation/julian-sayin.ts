@@ -29,15 +29,11 @@ const julianSayin: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'flow',
-      kicker: 'Where the projection lives',
+      kind: 'diagram',
+      diagram: 'first-read-window',
+      kicker: 'The read, drawn up',
       title: 'After the first answer is removed',
-      lead: 'Ohio State keeps handing him that first window. An NFL defense will not.',
-      steps: [
-        { label: 'First read open', text: 'On time, accurate, and anticipatory; the operation stays on schedule and most of the best tape lives here.' },
-        { label: 'First read covered', text: 'The progression slows, and the margin his supporting cast provides starts doing the work.' },
-        { label: 'The result', text: 'The sacks come, and against ranked opponents the completion rate slid and the giveaways climbed.' },
-      ],
+      lead: 'With the first read open he is on time, accurate, and anticipatory, and most of the best tape lives there. Once it is covered the progression slows and the sacks come, and against ranked opponents the completion rate slid and the giveaways climbed. Ohio State keeps handing him that first window; an NFL defense will not.',
       expands: ['The open questions'],
     },
     {

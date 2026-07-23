@@ -29,16 +29,11 @@ const drewMestemaker: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'flow',
-      kicker: 'Where it wobbles',
-      title: 'Off the first read',
-      lead: 'While the first read is there, the base holds. The moment he has to come off it, the lower half is the tell.',
-      steps: [
-        { label: 'First read there', text: 'The base stays under him and the ball comes out with velocity and shape.' },
-        { label: 'Forced off it', text: 'The feet get choppy and the mechanics loosen.' },
-        { label: 'The result', text: 'The ball starts to sail or die, and the shaky moments trace back to the body more than the arm.' },
-      ],
-      resolution: { label: 'What it waits on', text: 'Added mass and functional strength, which the drive throw and the late-game stability both need.' },
+      kind: 'diagram',
+      diagram: 'off-first-read',
+      kicker: 'The mechanics, drawn up',
+      title: 'On the first read, and off it',
+      lead: 'While the first read is there the base holds and the ball comes out with velocity and shape. The moment he is forced off it the feet get choppy and the ball sails or dies, tracing back to the body more than the arm. Added mass is what the lower half is waiting on.',
       expands: ['The open questions'],
     },
     {

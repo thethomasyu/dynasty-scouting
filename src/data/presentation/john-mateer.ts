@@ -30,15 +30,11 @@ const johnMateer: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'flow',
-      kicker: 'Where the giveaways come from',
-      title: 'Covered read, bail, giveaway',
-      lead: 'The highlights and the giveaways arrive in about equal measure, and the same instinct feeds both.',
-      steps: [
-        { label: 'First read covered', text: 'Rather than reset in the pocket and climb to a second option, the instinct is to take off.' },
-        { label: 'The extended play', text: 'He creates from platforms and angles that should not work, and the big plays are real.' },
-        { label: 'The cost', text: 'The same aggression produces the turnover-worthy throw, and a below-average arm cannot layer a safer one.' },
-      ],
+      kind: 'diagram',
+      diagram: 'bail-to-legs',
+      kicker: 'The decision, drawn up',
+      title: 'Bail, or reset to the second read',
+      lead: 'His answer to a covered first read is too often to break contain and run rather than climb to a second option, which gives up the throw that was there. The creation from platforms that should not work is real; the reads he leaves behind, and the turnover-worthy throw the same aggression produces, are the cost.',
       expands: ['The open questions'],
     },
     {

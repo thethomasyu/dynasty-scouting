@@ -30,6 +30,13 @@ const lanorrisSellers: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
+      kind: 'diagram',
+      diagram: 'rescue-creation',
+      kicker: 'The pocket, drawn up',
+      title: 'A good play out of a bad one',
+      lead: 'When the protection caves he slips the rush and keeps the down alive, turning a broken snap into positive yardage. The talent bailing out unstable snaps is the productive part; how many of those snaps he creates himself is the question underneath it.',
+    },
+    {
       kind: 'question',
       kicker: 'The open question',
       question: 'How much of the good comes on schedule, and how much is rescue?',

@@ -44,6 +44,13 @@ const trinidadChambliss: Presentation = {
       expands: ['The open questions', 'Where the evaluations split'],
     },
     {
+      kind: 'diagram',
+      diagram: 'release-exposure',
+      kicker: 'The mechanics, drawn up',
+      title: 'A long release at the line',
+      lead: 'The elongated motion brings the ball low before it comes forward, into the reach of the linemen’s hands, so a batted pass is a live risk on a timing throw. Shortening it cannot come at the cost of the touch the same motion helps produce.',
+    },
+    {
       kind: 'watch',
       items: [
         { topic: 'A shorter release', question: 'Can he tighten the motion without draining the touch out of it, since it is doing double duty as a strength and a liability?', status: 'open' },

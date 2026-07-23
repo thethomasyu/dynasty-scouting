@@ -29,6 +29,13 @@ const archManning: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
+      kind: 'diagram',
+      diagram: 'pocket-climb',
+      kicker: 'The pocket, drawn up',
+      title: 'Climb and reset, not drift and retreat',
+      lead: 'When the pocket tightens he steps up into the space the edge rush leaves instead of backing off his platform, resets his feet in traffic, and delivers over the line. The retreat that turns a manageable rush into a sack is the habit he does not have.',
+    },
+    {
       kind: 'question',
       kicker: 'The open question',
       question: 'How much does the compact release cost the deep ball?',

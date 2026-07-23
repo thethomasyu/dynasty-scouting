@@ -30,16 +30,11 @@ const samLeavitt: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'flow',
-      kicker: 'Where the sacks come from',
-      title: 'Drift, broken platform, sack',
-      lead: 'The sacks are less a protection story than a movement one, and movement is coachable, which is the hopeful part.',
-      steps: [
-        { label: 'Pressure arrives', text: 'Instead of climbing into the space the rush leaves, he drifts backward.' },
-        { label: 'The platform breaks', text: 'A manageable rush becomes a sack, and a clean base becomes an off-balance heave.' },
-        { label: 'The extended play', text: 'When the scramble drill does not resolve, this arm and this decision-making produce the turnover-worthy throws.' },
-      ],
-      resolution: { label: 'The reason to keep it open', text: 'Backward drift is a habit, not a physical limit, and the move to LSU is the bet that a new offense can pull it out of him.' },
+      kind: 'diagram',
+      diagram: 'backward-drift',
+      kicker: 'The pocket, drawn up',
+      title: 'How the drift becomes a sack',
+      lead: 'Instead of climbing into the space the rush leaves, he drifts backward, and the retreat deepens the edge rush’s angle until a manageable rush is a sack. Because it is a movement habit and not a protection failure it is coachable, and the move to LSU is the bet that a new offense can pull it out of him.',
       expands: ['The open questions'],
     },
     {

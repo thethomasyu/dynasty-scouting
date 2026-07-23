@@ -90,6 +90,18 @@ export type DiagramType =
   | 'zone-feel'         // Wingo: past open grass vs into the window
   | 'stacking'          // Becker: cushion, even, on top
   | 'two-opens'         // Duff: separation window vs placement window
+  // Quarterback concept diagrams. One concept, one owner; QB-specific.
+  | 'pocket-climb'      // Manning: back off vs climb-and-reset
+  | 'rescue-creation'   // Sellers: broken pocket rescued by legs/arm
+  | 'first-read-window' // Sayin: first read open vs first read removed
+  | 'backward-drift'    // Leavitt: drift deepens the rush into a sack
+  | 'no-escape'         // Lindsey: pressure with no movement answer
+  | 'bail-to-legs'      // Mateer: bail to run vs reset to the second read
+  | 'release-exposure'  // Chambliss: long release exposed to hands at the line
+  | 'touch-or-velocity' // Maiava: the lofted ball vs the driven ball not thrown
+  | 'boundary-arm'      // Mensah: the deep boundary throw that loses steam
+  | 'eyes-under-pressure'// Moore: eyes downfield vs eyes dropping under heat
+  | 'off-first-read'    // Mestemaker: base set on the first read vs off it
 
 export type WatchStatus = 'open' | 'trending-up' | 'trending-down' | 'resolved'
 

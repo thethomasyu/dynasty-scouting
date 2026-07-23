@@ -29,16 +29,11 @@ const darianMensah: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'compare',
-      kicker: 'The tradeoff in his game',
-      title: 'Inside the numbers, outside the numbers',
-      lead: 'His game is built on the parts that do not show up on a radar gun, which is exactly why the arm is where I hold back.',
-      layout: 'panels',
-      sides: [
-        { label: 'Inside about fifty yards', status: 'Not much argument', body: 'Touch, spiral control, and placement that turns the catch into yards. He layers the ball over and around coverage.' },
-        { label: 'Outside the numbers', status: 'Where I hold back', body: 'The drive power is adequate at best and a deep ball can die before it arrives. His yards per attempt fell against ranked opponents the way a real arm limit would show.' },
-      ],
-      verdict: { label: 'Why it matters', body: 'There is no second way to move the ball as a runner, so when the passing structure stalls there is no fallback in the game.' },
+      kind: 'diagram',
+      diagram: 'boundary-arm',
+      kicker: 'The throw, drawn up',
+      title: 'The throw the arm answers for',
+      lead: 'Inside about fifty yards the placement arrives and there is not much argument about it. The deep ball outside the numbers, toward the boundary, is where the drive power fades and the ball can lose its legs before it gets there. There is no second way to move it as a runner when the passing structure stalls.',
       expands: ['The open questions'],
     },
     {

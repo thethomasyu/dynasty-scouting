@@ -30,16 +30,11 @@ const jaydenMaiava: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'compare',
-      kicker: 'It comes down to one mechanism',
-      title: 'Touch as choice, or touch as the only setting',
-      lead: 'On a Saturday the catchable ball looks the same either way. The throws he chose not to make are the ones that would tell you which, and those are not on the tape.',
-      layout: 'panels',
-      sides: [
-        { label: 'If it is a choice', status: 'A starter’s floor', body: 'A passer who could drive it but prefers to drop it in soft protects the ball and moves an offense.' },
-        { label: 'If it is compensation', status: 'A capped ceiling', body: 'If soft is the only setting the arm has, the ceiling sits about where the floor is, because a quarterback who cannot threaten velocity gets crowded once the league speeds up.' },
-      ],
-      verdict: { label: 'What the tape can’t show', body: 'The catchable ball reads identically under either explanation. Only the velocity throws he passed up would separate them.' },
+      kind: 'diagram',
+      diagram: 'touch-or-velocity',
+      kicker: 'The throw, drawn up',
+      title: 'The ball he throws, and the one he doesn’t',
+      lead: 'The soft, catchable, layered ball is all over the tape. If he could drive it and chose touch, he is a starter who protects the ball; if soft is the only setting the arm has, the ceiling sits about where the floor is. The velocity throws that would separate the two are the ones he passed up, so they are not on the tape.',
       expands: ['The open questions', 'Where the evaluations split'],
     },
     {

@@ -30,16 +30,11 @@ const danteMoore: Presentation = {
       expands: ['Where the evaluations agree'],
     },
     {
-      kind: 'compare',
-      kicker: 'The context that decides him',
-      title: 'Clean pocket, then pressure',
-      lead: 'Everything about Moore is settled except how he plays once the pocket stops cooperating, and that one split carries the whole disagreement.',
-      layout: 'panels',
-      sides: [
-        { label: 'In structure', status: 'Surest bet in the class', body: 'Accuracy at every level, on-time rhythm, and processing that solves a read off one defender. Inside plan the operation looks like a pro’s.' },
-        { label: 'Under pressure', status: 'The whole question', body: 'The eyes drop, the open downfield throw goes unthrown, and the drift arrives in the higher-leverage games. The interceptions leave the same fingerprint against ranked opponents.' },
-      ],
-      verdict: { label: 'What the tape can’t yet separate', body: 'Whether the drift is a young starter still learning to hold his platform, or the arm and the frame quietly setting a limit on how far the accuracy travels. A clean season does not produce enough hard reps to know.' },
+      kind: 'diagram',
+      diagram: 'eyes-under-pressure',
+      kicker: 'The pressure, drawn up',
+      title: 'Where the eyes go under heat',
+      lead: 'In a clean pocket the eyes stay up and the open downfield throw gets taken; that version is the surest bet in the class. When pressure arrives the eyes can drop to the rush and the same throw goes unthrown, most in the higher-leverage games. What the tape cannot yet separate is a young starter from a fixed ceiling.',
       expands: ['The open questions', 'Where the evaluations split'],
     },
     {
