@@ -8,12 +8,20 @@ import {
   hasCareerHistory,
   hasRushing,
   interceptionRate,
+  isThinQbSample,
+  playedGames,
+  qbTierSplits,
+  QB_TIER_RANK_LABEL,
   touchdownRate,
   totalsLine,
   yardsPerAttempt,
   yardsPerGame,
+  type QbDefenseTier,
+  type QbGameStat,
   type QbSeasonLine,
+  type QbSplitRate,
   type QbStatProfile,
+  type QbTierSplit,
 } from '../../../data/stats/qbStats2027'
 
 /**
@@ -22,22 +30,44 @@ import {
  * LEVEL ONE, visible by default: a compact 2025 passing snapshot plus a rushing
  * line. Verified totals only. Numbers, not narrative.
  *
- * LEVEL TWO, on demand: the full record. A season-by-season career passing table
- * and a career rushing table, a derived 2025 efficiency grid, and a
- * sources/methodology drawer. Game-by-game logs and opponent-quality splits are
- * a deeper layer that is not verified for every quarterback yet and stays out of
- * the reader-facing view rather than being estimated.
+ * LEVEL TWO, on demand: the full record. Career passing and rushing tables, a
+ * derived 2025 efficiency grid, production by opponent pass-defense tier,
+ * verified situational and opponent-quality splits, red-zone and explosive
+ * shares, a game-by-game log tagged with each opponent's pass defense, and a
+ * sources/methodology drawer.
  *
- * Hard rules: no generated prose; null is unavailable and never renders as zero;
- * every percentage and rate is derived here from stored totals.
+ * Hard rules (shared with the WR layer): no generated prose; null is unavailable
+ * and never renders as zero; DNP games stay unavailable but count as played only
+ * where the source counts them; percentages are stored as fractions and formatted
+ * here. Tier splits and game logs reconcile to the verified 2025 line.
  */
 
 interface Props {
   player: Player
 }
 
+const TIER_MOD: Record<QbDefenseTier, string> = {
+  Strong: 'strong',
+  Average: 'average',
+  Weak: 'weak',
+  FCS: 'fcs',
+}
+
 function schoolLabel(l: QbSeasonLine): string {
   return l.level === 'Division II' ? `${l.school} · D-II` : l.school
+}
+
+function TierTag({ tier, rank }: { tier: QbDefenseTier; rank?: number | null }) {
+  return (
+    <span className={`pstat-tier pstat-tier--${TIER_MOD[tier]}`}>
+      {tier}
+      {rank != null && <span className="pstat-tier__rank">#{rank}</span>}
+    </span>
+  )
+}
+
+function ThinTag() {
+  return <span className="pstat-thin" title="Fewer than three games">Thin</span>
 }
 
 /* ---- Snapshot (level one) --------------------------------------------- */
@@ -219,24 +249,217 @@ function Efficiency({ profile }: { profile: QbStatProfile }) {
   )
 }
 
+/* ---- Production by pass-defense tier ----------------------------------- */
+
+function TierSplits({ profile }: { profile: QbStatProfile }) {
+  const rows = qbTierSplits(profile)
+  if (!rows.length) return null
+  return (
+    <section className="pstat-block" aria-labelledby={`${profile.slug}-tiers`}>
+      <h3 className="pstat-block__h" id={`${profile.slug}-tiers`}>Production by pass-defense tier</h3>
+      <div className="pstat-scroll">
+        <table className="pstat-table">
+          <thead>
+            <tr>
+              <th scope="col" className="pstat-table__lhs">Opponent tier</th>
+              <th scope="col">GP</th>
+              <th scope="col">Cmp-Att</th>
+              <th scope="col">Cmp%</th>
+              <th scope="col">Yds</th>
+              <th scope="col">Y/A</th>
+              <th scope="col">TD</th>
+              <th scope="col">INT</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r: QbTierSplit) => (
+              <tr key={r.tier}>
+                <th scope="row" className="pstat-table__lhs">
+                  <span className="pstat-splitname">
+                    <TierTag tier={r.tier} />
+                    <span className="pstat-splitname__sub">{QB_TIER_RANK_LABEL[r.tier]}</span>
+                    {isThinQbSample(r.games) && <ThinTag />}
+                  </span>
+                </th>
+                <td>{fmtInt(r.games)}</td>
+                <td>{`${fmtInt(r.completions)}-${fmtInt(r.attempts)}`}</td>
+                <td>{fmtPct(r.attempts ? r.completions / r.attempts : null)}</td>
+                <td>{fmtInt(r.passingYards)}</td>
+                <td>{fmtDec(r.attempts ? r.passingYards / r.attempts : null)}</td>
+                <td>{fmtInt(r.passingTouchdowns)}</td>
+                <td>{fmtInt(r.interceptions)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="pstat-foot">
+        Aggregated from the game log by the opponent's 2025 final FBS pass-efficiency-defense rank. A team measure, not a coverage grade, and it reconciles to the season total.
+      </p>
+    </section>
+  )
+}
+
+/* ---- Rate split table (situational + opponent context) ----------------- */
+
+function RateTable({ rows, headLabel }: { rows: QbSplitRate[]; headLabel: string }) {
+  return (
+    <div className="pstat-scroll">
+      <table className="pstat-table">
+        <thead>
+          <tr>
+            <th scope="col" className="pstat-table__lhs">{headLabel}</th>
+            <th scope="col">Cmp%</th>
+            <th scope="col">Y/A</th>
+            <th scope="col">TD</th>
+            <th scope="col">INT</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr key={r.label}>
+              <th scope="row" className="pstat-table__lhs">
+                <span className="pstat-splitname__label">{r.label}</span>
+              </th>
+              <td>{fmtPct(r.completionPct)}</td>
+              <td>{fmtDec(r.yardsPerAttempt)}</td>
+              <td>{fmtInt(r.passingTouchdowns)}</td>
+              <td>{fmtInt(r.interceptions)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+function SituationalSplits({ profile }: { profile: QbStatProfile }) {
+  const rows = profile.situationalSplits2025
+  if (!rows || !rows.length) return null
+  return (
+    <section className="pstat-block" aria-labelledby={`${profile.slug}-situational`}>
+      <h3 className="pstat-block__h" id={`${profile.slug}-situational`}>Situational splits · 2025</h3>
+      <RateTable rows={rows} headLabel="Situation" />
+      <p className="pstat-foot">Rate splits over the situation's attempts. Completion percentage and yards per attempt only; a split does not carry its own game count.</p>
+    </section>
+  )
+}
+
+function OpponentContext({ profile }: { profile: QbStatProfile }) {
+  const rows = profile.opponentContext2025
+  const rz = profile.redZone2025
+  const ex = profile.explosive2025
+  if ((!rows || !rows.length) && !rz && !ex) return null
+  return (
+    <section className="pstat-block pstat-block--secondary" aria-labelledby={`${profile.slug}-oppctx`}>
+      <h3 className="pstat-block__h" id={`${profile.slug}-oppctx`}>
+        Opponent quality, red zone and explosives <span className="pstat-block__tag">Secondary</span>
+      </h3>
+      {rows && rows.length > 0 && <RateTable rows={rows} headLabel="Opponent split" />}
+      {(rz || ex) && (
+        <ul className="pstat-metrics" role="list">
+          {rz && <li className="pstat-metrics__item"><span className="pstat-metrics__val">{fmtPct(rz.completionPct)}</span><span className="pstat-metrics__lbl">Red-zone Cmp% ({fmtInt(rz.attempts)} att)</span></li>}
+          {rz && <li className="pstat-metrics__item"><span className="pstat-metrics__val">{`${fmtInt(rz.passingTouchdowns)}–${fmtInt(rz.interceptions)}`}</span><span className="pstat-metrics__lbl">Red-zone TD–INT</span></li>}
+          {ex && <li className="pstat-metrics__item"><span className="pstat-metrics__val">{fmtPct(ex.share15)}</span><span className="pstat-metrics__lbl">15+ yd share ({fmtInt(ex.comp15)})</span></li>}
+          {ex && <li className="pstat-metrics__item"><span className="pstat-metrics__val">{fmtPct(ex.share25)}</span><span className="pstat-metrics__lbl">25+ yd share ({fmtInt(ex.comp25)})</span></li>}
+        </ul>
+      )}
+      <p className="pstat-foot">AP-ranked and FBS winning-team splits are rate only. Explosive shares are the fraction of completions gaining 15+ and 25+ yards.</p>
+    </section>
+  )
+}
+
+/* ---- Game-by-game passing ---------------------------------------------- */
+
+function locMark(g: QbGameStat): string {
+  return g.location === 'away' ? '@ ' : g.location === 'neutral' ? 'vs ' : ''
+}
+
+function GameRow({ g, maxYards }: { g: QbGameStat; maxYards: number }) {
+  const dnp = g.status === 'DNP' || g.passingYards == null
+  const width = dnp ? 0 : Math.max(2, Math.round((g.passingYards! / maxYards) * 100))
+  return (
+    <li className={`pstat-log__row${dnp ? ' pstat-log__row--dnp' : ''}`}>
+      <span className="pstat-log__opp">
+        <span className="pstat-log__oppname">{locMark(g)}{g.opponent}</span>
+        <TierTag tier={g.defenseTier} rank={g.passEfficiencyDefenseRank} />
+      </span>
+      <span className="pstat-log__bar" aria-hidden="true">
+        {dnp ? (
+          <span className="pstat-log__dnptrack" />
+        ) : (
+          <span className={`pstat-log__fill pstat-log__fill--${TIER_MOD[g.defenseTier]}`} style={{ width: `${width}%` }} />
+        )}
+      </span>
+      <span className="pstat-log__yds">
+        {dnp ? (
+          <span className="pstat-log__dnp">DNP</span>
+        ) : (
+          <>
+            <strong>{fmtInt(g.passingYards)}</strong> yds
+            <span className="pstat-log__line">
+              {fmtInt(g.completions)}/{fmtInt(g.attempts)}
+              {g.passingTouchdowns ? ` · ${fmtInt(g.passingTouchdowns)} TD` : ''}
+              {g.interceptions ? ` · ${fmtInt(g.interceptions)} INT` : ''}
+            </span>
+          </>
+        )}
+      </span>
+    </li>
+  )
+}
+
+function GameLog({ profile }: { profile: QbStatProfile }) {
+  const games = profile.gameLog2025
+  if (!games || !games.length) return null
+  const maxYards = Math.max(
+    1,
+    ...games.map((g) => (g.status === 'Played' && g.passingYards != null ? g.passingYards : 0)),
+  )
+  return (
+    <section className="pstat-block" aria-labelledby={`${profile.slug}-log`}>
+      <h3 className="pstat-block__h" id={`${profile.slug}-log`}>Game by game · 2025</h3>
+      <ol className="pstat-log" role="list">
+        {games.map((g) => (
+          <GameRow key={g.gameNumber} g={g} maxYards={maxYards} />
+        ))}
+      </ol>
+      <p className="pstat-foot">
+        Bars scale to passing yards. DNP games are unavailable, not zero. The tag is the opponent's 2025 pass defense; a tier with no number sits outside the published top-121 (FCS opponents are untagged by rank).
+      </p>
+    </section>
+  )
+}
+
 /* ---- Sources & methodology -------------------------------------------- */
 
 function SourcesDrawer({ profile }: { profile: QbStatProfile }) {
+  const log = profile.gameLog2025
   return (
     <section className="pstat-block" aria-labelledby={`${profile.slug}-sources`}>
       <h3 className="pstat-block__h" id={`${profile.slug}-sources`}>Sources and methodology</h3>
       <dl className="pstat-meta">
         <div className="pstat-meta__row">
           <dt>Status</dt>
-          <dd>Provisional. Verified 2025 line and season-by-season career history. Game-by-game logs and opponent-quality splits are pending and are not shown rather than estimated.</dd>
+          <dd>Provisional. Verified 2025 line, career history, game-by-game log and situational splits. Advanced charting (pressure, air yards, coverage) is not yet included.</dd>
         </div>
         <div className="pstat-meta__row">
           <dt>2025 line</dt>
           <dd>From the project's verified research package; kept authoritative where a public source disagrees.</dd>
         </div>
+        {log && log.length > 0 && (
+          <div className="pstat-meta__row">
+            <dt>Game log</dt>
+            <dd>Per-game passing transcribed from public college-statistics tables and reconciled to the verified 2025 totals ({fmtInt(playedGames(profile))} games played).</dd>
+          </div>
+        )}
         <div className="pstat-meta__row">
-          <dt>Career history</dt>
-          <dd>Prior-season lines transcribed from public college-statistics tables and cross-checked against the verified 2025 line.</dd>
+          <dt>Pass-defense tiers</dt>
+          <dd>Strong 1–34 · Average 35–102 · Weak 103–136 · FCS separate. 2025 final FBS pass-efficiency-defense ranks. A team measure, not a coverage grade.</dd>
+        </div>
+        <div className="pstat-meta__row">
+          <dt>Situational splits</dt>
+          <dd>Public down-and-distance, game-state, red-zone and opponent-quality splits. Rate only; they do not separate air yards from yards after the catch.</dd>
         </div>
         <div className="pstat-meta__row">
           <dt>Derived fields</dt>
@@ -253,6 +476,16 @@ function SourcesDrawer({ profile }: { profile: QbStatProfile }) {
           </div>
         ))}
       </dl>
+      {profile.statsSources && profile.statsSources.length > 0 && (
+        <ul className="pstat-sources" role="list">
+          {profile.statsSources.map((src, i) => (
+            <li key={i} className="pstat-sources__item">
+              <span className="pstat-sources__meta">{src.label}</span>
+              <a className="pstat-sources__link" href={src.url} target="_blank" rel="noreferrer noopener">View source</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }
@@ -274,6 +507,7 @@ export default function QbStatsSection({ player }: Props) {
   }
 
   const career = hasCareerHistory(profile)
+  const hasDepth = !!(profile.gameLog2025 && profile.gameLog2025.length)
 
   return (
     <section className="vm vm--stats reveal" id="vm-stats" aria-labelledby="vm-stats-t">
@@ -293,7 +527,7 @@ export default function QbStatsSection({ player }: Props) {
             aria-controls={panelId}
             onClick={() => setOpen((v) => !v)}
           >
-            <span className="xp__toggle-label">{open ? 'Collapse statistics' : career ? 'Full statistical record' : 'Full 2025 line'}</span>
+            <span className="xp__toggle-label">{open ? 'Collapse statistics' : hasDepth ? 'Full statistical record' : career ? 'Full statistical record' : 'Full 2025 line'}</span>
             <span className="xp__toggle-mark" aria-hidden="true">{open ? '−' : '+'}</span>
           </button>
           <div id={panelId} className="xp__panel" data-open={open || undefined}>
@@ -303,6 +537,10 @@ export default function QbStatsSection({ player }: Props) {
                 <CareerPassingTable profile={profile} />
                 <CareerRushingTable profile={profile} />
                 <Efficiency profile={profile} />
+                <TierSplits profile={profile} />
+                <SituationalSplits profile={profile} />
+                <OpponentContext profile={profile} />
+                <GameLog profile={profile} />
                 <SourcesDrawer profile={profile} />
                 <button type="button" className="xp__close" onClick={collapseFromBottom} aria-controls={panelId}>
                   Collapse statistics <span aria-hidden="true">−</span>
