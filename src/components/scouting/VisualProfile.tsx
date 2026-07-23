@@ -20,7 +20,9 @@ import {
 } from './modules'
 import EvalHistory from '../EvalHistory'
 import StatsSection from './stats/StatsSection'
+import QbStatsSection from './stats/QbStatsSection'
 import { hasStats } from '../../data/stats'
+import { hasQbStats } from '../../data/stats/qbStats2027'
 
 /**
  * The visual-first player page body. Two levels:
@@ -63,8 +65,14 @@ function moduleAnchor(m: ModuleSpec, i: number): { id: string; label: string } |
   }
 }
 
+/** Does this player have a statistics section, whatever the position? */
+function playerHasStats(player?: Pick<Player, 'slug' | 'position'>): boolean {
+  if (!player) return false
+  return player.position === 'QB' ? hasQbStats(player.slug) : hasStats(player.slug)
+}
+
 /** Nav anchors for the rail: the visual chapters, not the markdown headings. */
-export function computeAnchors(pres: Presentation, slug?: string): Array<{ text: string; id: string }> {
+export function computeAnchors(pres: Presentation, player?: Pick<Player, 'slug' | 'position'>): Array<{ text: string; id: string }> {
   const seen = new Set<string>()
   const out: Array<{ text: string; id: string }> = []
   pres.modules.forEach((m, i) => {
@@ -74,7 +82,7 @@ export function computeAnchors(pres: Presentation, slug?: string): Array<{ text:
       out.push({ text: a.label, id: a.id })
     }
   })
-  if (slug && hasStats(slug)) out.push({ text: 'Production', id: 'vm-stats' })
+  if (playerHasStats(player)) out.push({ text: 'Production', id: 'vm-stats' })
   out.push({ text: 'Evaluation history', id: 'eval-history' })
   return out
 }
@@ -423,7 +431,7 @@ export default function VisualProfile({ player, profile, pres }: Props) {
         </section>
       )}
 
-      <StatsSection player={player} />
+      {player.position === 'QB' ? <QbStatsSection player={player} /> : <StatsSection player={player} />}
 
       <EvalHistory player={player} />
     </article>

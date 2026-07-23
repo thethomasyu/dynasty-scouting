@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { orderedPlayers } from '../data/players'
-import { headshotOf } from '../lib/images'
+import { orderedFor } from '../data/players'
+import type { Position } from '../data/types'
+import { playerPath } from '../lib/routes'
+import Portrait from './Portrait'
 
 function matches(query: string, haystacks: string[]): boolean {
   const q = query.trim().toLowerCase()
@@ -11,11 +13,12 @@ function matches(query: string, haystacks: string[]): boolean {
 }
 
 /** The full class, searchable, alphabetical. Never a board. */
-export default function Explorer() {
+export default function Explorer({ position }: { position: Position }) {
   const [query, setQuery] = useState('')
+  const all = useMemo(() => orderedFor(position), [position])
   const shown = useMemo(
-    () => orderedPlayers.filter((p) => matches(query, [p.name, p.school, p.teaser, p.via ?? ''])),
-    [query],
+    () => all.filter((p) => matches(query, [p.name, p.school, p.teaser, p.via ?? ''])),
+    [all, query],
   )
 
   return (
@@ -27,7 +30,7 @@ export default function Explorer() {
               The full class
             </h2>
             <p className="explorer__note">
-              All {orderedPlayers.length} profiles, in alphabetical order. No rankings here.
+              All {all.length} profiles, in alphabetical order. No rankings here.
             </p>
           </div>
           <div className="explorer__search">
@@ -43,7 +46,7 @@ export default function Explorer() {
               onChange={(e) => setQuery(e.target.value)}
             />
             <span className="explorer__count" aria-live="polite">
-              {shown.length} of {orderedPlayers.length}
+              {shown.length} of {all.length}
             </span>
           </div>
         </div>
@@ -57,12 +60,12 @@ export default function Explorer() {
             {shown.map((p) => (
               <li key={p.slug}>
                 <Link
-                  to={`/2027/wr/${p.slug}`}
+                  to={playerPath(position, p.slug)}
                   className="player-card"
                   style={{ '--school': p.accent } as React.CSSProperties}
                 >
                   <div className="player-card__media">
-                    <img src={headshotOf(p.slug)} alt="" loading="lazy" />
+                    <Portrait slug={p.slug} name={p.name} />
                   </div>
                   <div className="player-card__body">
                     <p className="player-card__status kicker">Early evaluation</p>

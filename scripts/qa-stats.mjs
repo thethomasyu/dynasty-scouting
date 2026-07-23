@@ -33,8 +33,9 @@ function appSlugs() {
   const slugs = []
   const re = /slug:\s*'([^']+)'/g
   let m
-  // The players array is everything before heldProspects; stop there.
-  const cut = src.indexOf('heldProspects')
+  // The WR player array is everything before the held list (wrHeld); stop there
+  // so held prospects and the imported QB manifest are excluded.
+  const cut = src.indexOf('wrHeld')
   const scope = cut > 0 ? src.slice(0, cut) : src
   while ((m = re.exec(scope)) !== null) slugs.push(m[1])
   return slugs

@@ -1,4 +1,5 @@
-import type { HeldProspect, Player } from './types'
+import type { HeldProspect, Player, Position } from './types'
+import { qbPlayers, qbHeld } from './qbPlayers'
 
 /**
  * The 2027 WR manifest. Names, schools, and transfer paths follow the
@@ -27,7 +28,21 @@ import type { HeldProspect, Player } from './types'
  * fixed to this date; a future evaluation stage gets its own date.
  */
 export const EVALUATION_DATE = '2026-07-21'
-export const players: Player[] = [
+
+/**
+ * Age reference date per position. Each evaluation set is completed on its own
+ * date, and ages stay fixed to it. The QB early set was verified 2026-07-23.
+ */
+export const EVALUATION_DATE_BY_POSITION: Record<Position, string> = {
+  WR: '2026-07-21',
+  QB: '2026-07-23',
+}
+
+export function evalDateFor(position: Position): string {
+  return EVALUATION_DATE_BY_POSITION[position]
+}
+
+const wrPlayers: Player[] = [
   {
     slug: 'cooper-barkate',
     name: 'Cooper Barkate',
@@ -503,25 +518,40 @@ export const players: Player[] = [
   },
 ]
 
-/** Neutral ordering: alphabetical by surname. Never a board. */
-export const orderedPlayers: Player[] = [...players].sort((a, b) =>
-  a.sortKey.localeCompare(b.sortKey),
-)
+/** The full manifest, all positions. The UI always scopes by position. */
+export const players: Player[] = [...wrPlayers, ...qbPlayers]
 
-export const featuredPlayers: Player[] = ['jeremiah-smith', 'cam-coleman', 'bryant-wesco-jr', 'nick-marsh', 'kj-duff']
-  .map((slug) => players.find((p) => p.slug === slug)!)
+/** Editorial "start here" slugs per position (not a ranking). */
+const FEATURED: Record<Position, string[]> = {
+  WR: ['jeremiah-smith', 'cam-coleman', 'bryant-wesco-jr', 'nick-marsh', 'kj-duff'],
+  QB: ['arch-manning', 'dante-moore', 'lanorris-sellers', 'drew-mestemaker', 'trinidad-chambliss'],
+}
+
+/** Neutral ordering: alphabetical by surname, within a position. Never a board. */
+export function orderedFor(position: Position): Player[] {
+  return players.filter((p) => p.position === position).sort((a, b) => a.sortKey.localeCompare(b.sortKey))
+}
+
+export function featuredFor(position: Position): Player[] {
+  return FEATURED[position].map((slug) => players.find((p) => p.slug === slug)).filter((p): p is Player => !!p)
+}
 
 export function getPlayer(slug: string): Player | undefined {
   return players.find((p) => p.slug === slug)
 }
 
+/** Neighbors stay inside the player's own position group. */
 export function neighborsOf(slug: string): { prev: Player; next: Player } | null {
-  const i = orderedPlayers.findIndex((p) => p.slug === slug)
+  const player = getPlayer(slug)
+  if (!player) return null
+  const ordered = orderedFor(player.position)
+  const i = ordered.findIndex((p) => p.slug === slug)
   if (i === -1) return null
-  const n = orderedPlayers.length
+  const n = ordered.length
+  if (n < 2) return null
   return {
-    prev: orderedPlayers[(i - 1 + n) % n],
-    next: orderedPlayers[(i + 1) % n],
+    prev: ordered[(i - 1 + n) % n],
+    next: ordered[(i + 1) % n],
   }
 }
 
@@ -529,7 +559,7 @@ export function neighborsOf(slug: string): { prev: Player; next: Player } | null
  * Held for more evidence: real prospects, no full profile yet.
  * Unknown is allowed. These lines only describe what the record holds.
  */
-export const heldProspects: HeldProspect[] = [
+const wrHeld: HeldProspect[] = [
   {
     slug: 'junior-sherrill',
     name: 'Junior Sherrill',
@@ -557,3 +587,8 @@ export const heldProspects: HeldProspect[] = [
     line: 'The early book is real explosiveness and long speed with the finishing behind it. No deep look exists yet, and he may not be in this class at all.',
   },
 ]
+
+/** Held prospects, scoped by position. */
+export function heldFor(position: Position): HeldProspect[] {
+  return position === 'QB' ? qbHeld : wrHeld
+}

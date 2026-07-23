@@ -780,3 +780,22 @@ html, body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Provisional evaluation badge (QB, pre-film) */
+.p-hero__badge--provisional {
+  color: var(--accent-bright);
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--ink-600));
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.p-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Player hero with no cutout art (QB): single column */
+.p-hero--nostage .p-hero__inner {
+  grid-template-columns: 1fr;
+  min-height: clamp(340px, 46vh, 520px);
+}

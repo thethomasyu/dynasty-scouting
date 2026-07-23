@@ -37,6 +37,8 @@ export interface PlayerBio {
   measurementStatus: 'school-listed' | 'verified'
 }
 
+export type Position = 'WR' | 'QB'
+
 export interface Player {
   slug: string
   name: string
@@ -45,10 +47,16 @@ export interface Player {
   school: string
   /** Transfer path, phrased for chrome ("via Michigan State"). */
   via?: string
-  position: 'WR'
+  position: Position
   classYear: '2027'
   stage: 'Early Evaluation'
   stageDate: 'Summer 2026'
+  /**
+   * Internal status marker. QB profiles are provisional: the foundation facts
+   * are verified, but the evaluation is built on the analyst record and has
+   * not been film-validated yet. WR profiles omit this (they are finished).
+   */
+  provisional?: boolean
   /** School color used only as a restrained accent. */
   accent: string
   /** Verified bio data rendered in the hero strip. */

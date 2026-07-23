@@ -8,11 +8,13 @@ import PrevNext from '../components/PrevNext'
 import VisualProfile, { computeAnchors } from '../components/scouting/VisualProfile'
 import NotFound from './NotFound'
 import { getPlayer } from '../data/players'
+import type { Position } from '../data/types'
+import { classPath, positionLabel } from '../lib/routes'
 import { presentations } from '../data/presentation'
 import { loadProfile, type ParsedProfile } from '../lib/parseProfile'
 import { useReadingProgress, useRevealRoot } from '../lib/hooks'
 
-export default function PlayerPage() {
+export default function PlayerPage({ position }: { position: Position }) {
   const { slug = '' } = useParams()
   const player = getPlayer(slug)
   const [profile, setProfile] = useState<ParsedProfile | null>(null)
@@ -37,9 +39,10 @@ export default function PlayerPage() {
   }, [player?.slug])
 
   const pres = player ? presentations[player.slug] : undefined
-  const anchors = useMemo(() => (pres ? computeAnchors(pres, player?.slug) : []), [pres, player?.slug])
+  const anchors = useMemo(() => (pres ? computeAnchors(pres, player) : []), [pres, player])
 
-  if (!player) return <NotFound />
+  // A slug only resolves under its own position's route.
+  if (!player || player.position !== position) return <NotFound />
 
   const showNav = profile !== null && anchors.length >= 4
 
@@ -48,7 +51,7 @@ export default function PlayerPage() {
       <div className="progress-hairline" aria-hidden="true">
         <div className="progress-hairline__bar" style={{ transform: `scaleX(${progress})` }} />
       </div>
-      <AppHeader backTo={{ to: '/2027/wr', label: 'All prospects' }} />
+      <AppHeader position={position} backTo={{ to: classPath(position), label: `All ${positionLabel(position)}s` }} />
       <main id="main">
         <PlayerHero player={player} />
         {profile && pres && (

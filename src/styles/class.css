@@ -619,3 +619,42 @@
     grid-template-columns: 72px 1fr;
   }
 }
+
+/* Player-image fallback: initials monogram when no asset exists yet (QB) */
+.portrait-mono {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait-mono__txt {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--school, var(--text-strong)) 70%, var(--text-strong));
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.pn-card .portrait-mono,
+.eval-history .portrait-mono {
+  position: relative;
+  inset: auto;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+}
+
+.pn-card .portrait-mono__txt,
+.eval-history .portrait-mono__txt {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+/* Class hero with no cover art (QB): single column */
+.class-hero--nostage .class-hero__inner {
+  grid-template-columns: 1fr;
+  min-height: clamp(320px, 44vh, 460px);
+}

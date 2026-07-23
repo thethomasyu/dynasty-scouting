@@ -118,3 +118,44 @@
   transform-origin: 0 50%;
   transition: transform 80ms linear;
 }
+
+/* Position switch (WR / QB) in the header */
+.posnav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: auto;
+  padding: 0.18rem;
+  border: 1px solid var(--ink-line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink-950) 45%, transparent);
+}
+
+.posnav__link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-ink-muted);
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  transition: color var(--speed-fast) ease, background var(--speed-fast) ease;
+}
+
+.posnav__link:hover {
+  color: var(--on-ink);
+}
+
+.posnav__link.is-active {
+  color: var(--on-ink);
+  background: color-mix(in srgb, var(--accent) 26%, transparent);
+}
+
+.app-header__inner .app-header__right {
+  margin-left: 0.4rem;
+}
+
+@media (max-width: 520px) {
+  .app-header__meta { display: none; }
+}

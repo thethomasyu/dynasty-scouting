@@ -31,6 +31,7 @@ export type TraitTier =
   | 'Limited evidence'
 
 export type TraitCategory =
+  // Wide receiver categories (the constitution's seven).
   | 'Route Craft'
   | 'Ball Skills'
   | 'Release & Press'
@@ -38,6 +39,16 @@ export type TraitCategory =
   | 'YAC Ability'
   | 'Football IQ / Spatial Awareness'
   | 'Physicality / Blocking'
+  // Quarterback categories (finalized QB trait model, applied across all twelve
+  // quarterbacks). Seven, to match the WR snapshot. 'Accuracy & Placement' and
+  // 'Processing & Anticipation' are shared with the readout order below.
+  | 'Accuracy & Placement'
+  | 'Processing & Anticipation'
+  | 'Pocket Management'
+  | 'Arm Strength & Throw Flexibility'
+  | 'Creation Outside Structure'
+  | 'Decision-Making & Risk'
+  | 'Rushing Value'
 
 export interface TraitRead {
   category: TraitCategory

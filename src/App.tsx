@@ -22,8 +22,11 @@ export default function App() {
       <ScrollReset />
       <Routes>
         <Route path="/" element={<Navigate to="/2027/wr" replace />} />
-        <Route path="/2027/wr" element={<ClassPage />} />
-        <Route path="/2027/wr/:slug" element={<PlayerPage />} />
+        <Route path="/2027" element={<Navigate to="/2027/wr" replace />} />
+        <Route path="/2027/wr" element={<ClassPage position="WR" />} />
+        <Route path="/2027/wr/:slug" element={<PlayerPage position="WR" />} />
+        <Route path="/2027/qb" element={<ClassPage position="QB" />} />
+        <Route path="/2027/qb/:slug" element={<PlayerPage position="QB" />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

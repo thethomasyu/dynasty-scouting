@@ -126,14 +126,15 @@ export function parseProfile(raw: string): ParsedProfile {
   return { title, dateline, openingCount, blocks, sections, words }
 }
 
-/** Lazy access to the repository-local profile content. */
-const contentModules = import.meta.glob('../content/2027/wr/*.md', {
+/** Lazy access to the repository-local profile content, both positions. */
+const contentModules = import.meta.glob(['../content/2027/wr/*.md', '../content/2027/qb/*.md'], {
   query: '?raw',
   import: 'default',
 }) as Record<string, () => Promise<string>>
 
 export async function loadProfile(slug: string): Promise<ParsedProfile | null> {
-  const loader = contentModules[`../content/2027/wr/${slug}.md`]
+  const loader =
+    contentModules[`../content/2027/wr/${slug}.md`] ?? contentModules[`../content/2027/qb/${slug}.md`]
   if (!loader) return null
   const raw = await loader()
   return parseProfile(raw)

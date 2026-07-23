@@ -24,6 +24,20 @@ import wingo from './ryan-wingo'
 import moore from './tj-moore'
 import young from './wyatt-young'
 
+// 2027 QB class (provisional)
+import archManning from './arch-manning'
+import danteMoore from './dante-moore'
+import lanorrisSellers from './lanorris-sellers'
+import cjCarr from './cj-carr'
+import drewMestemaker from './drew-mestemaker'
+import darianMensah from './darian-mensah'
+import trinidadChambliss from './trinidad-chambliss'
+import jaydenMaiava from './jayden-maiava'
+import julianSayin from './julian-sayin'
+import samLeavitt from './sam-leavitt'
+import johnMateer from './john-mateer'
+import drakeLindsey from './drake-lindsey'
+
 /**
  * Per-player presentation configs, keyed by slug. Every completed profile
  * has one; the composition varies because the evaluations vary. The
@@ -54,4 +68,17 @@ export const presentations: Record<string, Presentation> = {
   'ryan-wingo': wingo,
   'tj-moore': moore,
   'wyatt-young': young,
+  // 2027 QB class (provisional)
+  'arch-manning': archManning,
+  'dante-moore': danteMoore,
+  'lanorris-sellers': lanorrisSellers,
+  'cj-carr': cjCarr,
+  'drew-mestemaker': drewMestemaker,
+  'darian-mensah': darianMensah,
+  'trinidad-chambliss': trinidadChambliss,
+  'jayden-maiava': jaydenMaiava,
+  'julian-sayin': julianSayin,
+  'sam-leavitt': samLeavitt,
+  'john-mateer': johnMateer,
+  'drake-lindsey': drakeLindsey,
 }

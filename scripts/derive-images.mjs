@@ -18,7 +18,7 @@ import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
-const SRC = join(root, 'Assets', 'Players', '2027', 'WR')
+const POSITIONS = ['WR', 'QB']
 const OUT = join(root, 'src', 'assets', 'players')
 
 let sharp
@@ -31,30 +31,39 @@ try {
   process.exit(0)
 }
 
-if (!existsSync(SRC)) {
-  console.error('No master images found at ' + SRC)
-  process.exit(1)
-}
-
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
 mkdirSync(OUT, { recursive: true })
 
-for (const dir of readdirSync(SRC)) {
-  const slug = slugify(dir)
-  const headshot = join(SRC, dir, 'Headshot.png')
-  const cutout = join(SRC, dir, 'Cutout.png')
-  if (!existsSync(headshot) || !existsSync(cutout)) {
-    console.warn(`skipped ${dir}: expected Headshot.png and Cutout.png`)
-    continue
+let anySrc = false
+for (const pos of POSITIONS) {
+  const SRC = join(root, 'Assets', 'Players', '2027', pos)
+  if (!existsSync(SRC)) continue
+  anySrc = true
+  for (const dir of readdirSync(SRC)) {
+    const dirPath = join(SRC, dir)
+    const headshot = join(dirPath, 'Headshot.png')
+    const cutout = join(dirPath, 'Cutout.png')
+    if (!existsSync(headshot) || !existsSync(cutout)) {
+      // Empty QB folders are expected today; only warn when a master is half-present.
+      if (existsSync(headshot) || existsSync(cutout)) {
+        console.warn(`skipped ${pos}/${dir}: expected both Headshot.png and Cutout.png`)
+      }
+      continue
+    }
+    const slug = slugify(dir)
+    await sharp(headshot)
+      .resize({ width: 560, withoutEnlargement: true })
+      .webp({ quality: 84, alphaQuality: 90 })
+      .toFile(join(OUT, `${slug}-headshot.webp`))
+    await sharp(cutout)
+      .resize({ height: 1400, withoutEnlargement: true })
+      .webp({ quality: 82, alphaQuality: 90 })
+      .toFile(join(OUT, `${slug}-cutout.webp`))
+    console.log(`derived: ${slug}`)
   }
-  await sharp(headshot)
-    .resize({ width: 560, withoutEnlargement: true })
-    .webp({ quality: 84, alphaQuality: 90 })
-    .toFile(join(OUT, `${slug}-headshot.webp`))
-  await sharp(cutout)
-    .resize({ height: 1400, withoutEnlargement: true })
-    .webp({ quality: 82, alphaQuality: 90 })
-    .toFile(join(OUT, `${slug}-cutout.webp`))
-  console.log(`derived: ${slug}`)
+}
+if (!anySrc) {
+  console.error('No master image folders found under Assets/Players/2027/')
+  process.exit(1)
 }
 console.log('done.')

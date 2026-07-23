@@ -38,6 +38,7 @@ const TIER_CLASS: Record<string, string> = {
 }
 
 const CATEGORY_ICON: Record<TraitCategory, IconName> = {
+  // WR
   'Route Craft': 'route',
   'Ball Skills': 'ball',
   'Release & Press': 'release',
@@ -45,6 +46,15 @@ const CATEGORY_ICON: Record<TraitCategory, IconName> = {
   'YAC Ability': 'yac',
   'Football IQ / Spatial Awareness': 'iq',
   'Physicality / Blocking': 'physical',
+  // QB (finalized model, all twelve). 'Accuracy & Placement' and
+  // 'Processing & Anticipation' are shared with the WR-side keys above only in name.
+  'Accuracy & Placement': 'target',
+  'Processing & Anticipation': 'iq',
+  'Pocket Management': 'shield',
+  'Arm Strength & Throw Flexibility': 'bolt',
+  'Creation Outside Structure': 'compass',
+  'Decision-Making & Risk': 'flag',
+  'Rushing Value': 'speed',
 }
 
 function TraitTrack({ tier }: { tier: TraitRead['tier'] }) {
