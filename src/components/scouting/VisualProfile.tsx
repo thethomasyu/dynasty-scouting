@@ -19,6 +19,8 @@ import {
   WatchBoard,
 } from './modules'
 import EvalHistory from '../EvalHistory'
+import StatsSection from './stats/StatsSection'
+import { hasStats } from '../../data/stats'
 
 /**
  * The visual-first player page body. Two levels:
@@ -62,7 +64,7 @@ function moduleAnchor(m: ModuleSpec, i: number): { id: string; label: string } |
 }
 
 /** Nav anchors for the rail: the visual chapters, not the markdown headings. */
-export function computeAnchors(pres: Presentation): Array<{ text: string; id: string }> {
+export function computeAnchors(pres: Presentation, slug?: string): Array<{ text: string; id: string }> {
   const seen = new Set<string>()
   const out: Array<{ text: string; id: string }> = []
   pres.modules.forEach((m, i) => {
@@ -72,6 +74,7 @@ export function computeAnchors(pres: Presentation): Array<{ text: string; id: st
       out.push({ text: a.label, id: a.id })
     }
   })
+  if (slug && hasStats(slug)) out.push({ text: 'Production', id: 'vm-stats' })
   out.push({ text: 'Evaluation history', id: 'eval-history' })
   return out
 }
@@ -419,6 +422,8 @@ export default function VisualProfile({ player, profile, pres }: Props) {
           ))}
         </section>
       )}
+
+      <StatsSection player={player} />
 
       <EvalHistory player={player} />
     </article>

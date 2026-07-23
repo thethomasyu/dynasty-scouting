@@ -1450,3 +1450,476 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Statistics layer (2025 production): snapshot + expandable breakdown */
+/* Same paper/ink/grease-pencil vocabulary as the scouting modules.    */
+/* ------------------------------------------------------------------ */
+
+.pstat {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* --- Snapshot (level one) ------------------------------------------- */
+.pstat-snap__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  border-top: 2px solid var(--text-strong);
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.pstat-snap__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  padding: 0.95rem 0.4rem 0.9rem;
+  border-left: 1px solid var(--paper-line);
+}
+
+.pstat-snap__cell:first-child {
+  border-left: 0;
+}
+
+.pstat-snap__val {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2.15rem);
+  line-height: 1;
+  color: var(--text-strong);
+  letter-spacing: 0.01em;
+}
+
+.pstat-snap__lbl {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pstat-snap__context {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+}
+
+.pstat-snap__note {
+  margin: 0.55rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.pstat-xp {
+  margin-top: 1.2rem;
+}
+
+/* --- Expanded panel ------------------------------------------------- */
+.pstat-panel {
+  padding: clamp(1.2rem, 3vw, 1.7rem) clamp(1.1rem, 3.4vw, 1.9rem);
+}
+
+.pstat-block {
+  margin-top: 1.9rem;
+}
+
+.pstat-block:first-of-type {
+  margin-top: 0;
+}
+
+.pstat-block__h {
+  font-size: 1.02rem;
+  margin: 0 0 0.8rem;
+  padding-top: 0.6rem;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.pstat-block__h::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.8rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.pstat-block__tag,
+.pstat-block__h .pstat-block__tag {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--paper-line);
+  border-radius: 3px;
+  padding: 0.12rem 0.4rem;
+}
+
+.pstat-block--secondary {
+  opacity: 0.92;
+}
+
+/* --- Tables --------------------------------------------------------- */
+.pstat-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pstat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  min-width: 460px;
+}
+
+.pstat-table th,
+.pstat-table td {
+  padding: 0.5rem 0.5rem;
+  text-align: right;
+  border-bottom: 1px solid var(--paper-line);
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.pstat-table thead th {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1.5px solid var(--text-strong);
+  font-weight: 500;
+}
+
+.pstat-table__lhs {
+  text-align: left !important;
+}
+
+.pstat-table tbody th {
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+.pstat-table tbody tr:last-child td,
+.pstat-table tbody tr:last-child th {
+  border-bottom: 0;
+}
+
+.pstat-table__headcell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pstat-splitname {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pstat-splitname__sub {
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.pstat-splitname__label {
+  font-weight: 600;
+  color: var(--text-strong);
+}
+
+/* --- Tier + thin tags ---------------------------------------------- */
+.pstat-tier {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.14rem 0.42rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.pstat-tier__rank {
+  font-size: 0.54rem;
+  opacity: 0.75;
+}
+
+.pstat-tier--strong { background: var(--accent); color: var(--paper-bright); }
+.pstat-tier--average { background: color-mix(in srgb, var(--text-strong) 78%, var(--paper)); color: var(--paper-bright); }
+.pstat-tier--weak { border-color: var(--text-muted); color: var(--text-soft); background: var(--paper); }
+.pstat-tier--fcs { border-color: var(--paper-line); color: var(--text-muted); background: var(--paper-dim); border-style: dashed; }
+
+.pstat-thin {
+  font-family: var(--font-mono);
+  font-size: 0.54rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  border: 1px dashed var(--accent-deep);
+  border-radius: 3px;
+  padding: 0.1rem 0.34rem;
+}
+
+/* --- Consistency metrics ------------------------------------------- */
+.pstat-metrics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.9rem 1.2rem;
+}
+
+.pstat-metrics__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-top: 1px solid var(--paper-line);
+  padding-top: 0.5rem;
+}
+
+.pstat-metrics__val {
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  line-height: 1;
+  color: var(--text-strong);
+}
+
+.pstat-metrics__lbl {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* --- Footnotes ------------------------------------------------------ */
+.pstat-foot,
+.pstat-panel .pstat-foot {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+/* --- Game log bars -------------------------------------------------- */
+.pstat-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.pstat-log__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.9fr) minmax(90px, 1.6fr) minmax(74px, auto);
+  align-items: center;
+  gap: 0.7rem 0.9rem;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--paper-line);
+}
+
+.pstat-log__row:first-child {
+  border-top: 0;
+}
+
+.pstat-log__opp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.pstat-log__oppname {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--text-strong);
+  line-height: 1.2;
+}
+
+.pstat-log__bar {
+  display: block;
+  height: 0.72rem;
+  background: var(--paper-deep);
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pstat-log__fill {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--text-strong);
+}
+
+.pstat-log__fill--strong { background: var(--accent); }
+.pstat-log__fill--average { background: color-mix(in srgb, var(--text-strong) 78%, var(--paper)); }
+.pstat-log__fill--weak { background: var(--text-muted); }
+.pstat-log__fill--fcs { background: repeating-linear-gradient(135deg, var(--text-muted) 0 4px, transparent 4px 8px); }
+
+.pstat-log__dnptrack {
+  display: block;
+  height: 100%;
+  background: repeating-linear-gradient(135deg, var(--paper-line) 0 4px, transparent 4px 9px);
+}
+
+.pstat-log__yds {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text);
+  text-align: right;
+  line-height: 1.3;
+}
+
+.pstat-log__yds strong {
+  font-size: 0.9rem;
+  color: var(--text-strong);
+}
+
+.pstat-log__line {
+  display: block;
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.pstat-log__dnp {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pstat-log__row--dnp .pstat-log__oppname {
+  color: var(--text-soft);
+}
+
+/* --- Sources + methodology ----------------------------------------- */
+.pstat-meta {
+  margin: 0;
+  border-top: 1px solid var(--paper-line);
+}
+
+.pstat-meta__row {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.5fr) minmax(0, 1.5fr);
+  gap: 0.5rem 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--paper-line);
+}
+
+.pstat-meta__row dt {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pstat-meta__row dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.pstat-sources {
+  list-style: none;
+  margin: 0.9rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.pstat-sources__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--paper-line);
+}
+
+.pstat-sources__meta {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  line-height: 1.5;
+  color: var(--text-soft);
+  min-width: 0;
+}
+
+.pstat-sources__link {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+}
+
+.pstat-sources__link:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* --- Responsive ----------------------------------------------------- */
+@media (max-width: 620px) {
+  .pstat-snap__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .pstat-snap__cell:nth-child(4) {
+    border-left: 0;
+  }
+
+  .pstat-snap__cell:nth-child(n + 4) {
+    border-top: 1px solid var(--paper-line);
+  }
+
+  .pstat-log__row {
+    grid-template-columns: minmax(96px, 1fr) minmax(64px, auto);
+    grid-template-areas:
+      'opp yds'
+      'bar bar';
+  }
+
+  .pstat-log__opp { grid-area: opp; }
+  .pstat-log__yds { grid-area: yds; }
+  .pstat-log__bar { grid-area: bar; }
+
+  .pstat-meta__row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}

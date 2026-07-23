@@ -37,7 +37,7 @@ export default function PlayerPage() {
   }, [player?.slug])
 
   const pres = player ? presentations[player.slug] : undefined
-  const anchors = useMemo(() => (pres ? computeAnchors(pres) : []), [pres])
+  const anchors = useMemo(() => (pres ? computeAnchors(pres, player?.slug) : []), [pres, player?.slug])
 
   if (!player) return <NotFound />
 
